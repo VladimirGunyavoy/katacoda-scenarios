@@ -1,11 +1,6 @@
 {
     "scenarios": [
         {
-            "title": "Prometheus Client",
-            "description": "Prometheus Client",
-            "id": "prometheus-client"
-        },
-        {
             "title": "Prometheus Client Full",
             "description": "Prometheus Client Full",
             "id": "prometheus-client-full"
