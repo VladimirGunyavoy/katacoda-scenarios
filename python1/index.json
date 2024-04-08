@@ -40,6 +40,7 @@
                 {"file": "verify.py", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+				{"file": "step1.py", "target": "/usr/local/bin/", "chmod": "+x"}
             ]
         },
         "finish": {
@@ -54,6 +55,7 @@
         "./app/requirements.txt",
         "./app/metrics.py",
         "results.txt"
+		"step1.py"
     ],
     "environment": {
         "showdashboard": true,
