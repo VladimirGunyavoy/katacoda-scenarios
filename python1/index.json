@@ -54,7 +54,7 @@
         "./app/pip.conf",
         "./app/requirements.txt",
         "./app/metrics.py",
-        "results.txt"
+        "results.txt",
 		"step1.py"
     ],
     "environment": {
