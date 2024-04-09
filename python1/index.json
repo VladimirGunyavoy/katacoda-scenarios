@@ -34,10 +34,7 @@
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
 				{"file": "step0.py", "target": "/usr/local/bin/", "chmod": "+x"},
-				{"file": "step0.py", "target": "/usr/local/bin/", "chmod": "+x"},
-				{"file": "step1.py", "target": "/usr/local/bin/", "chmod": "+x"}
-				
-				
+				{"file": "step1.py", "target": "/usr/local/bin/", "chmod": "+x"}						
             ]
         },
         "finish": {
