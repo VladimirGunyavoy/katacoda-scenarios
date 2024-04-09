@@ -48,6 +48,7 @@
         "./app/requirements.txt",
         "./app/metrics.py",
         "results.txt",
+		"step0.py",
 		"step1.py"
     ],
     "environment": {
