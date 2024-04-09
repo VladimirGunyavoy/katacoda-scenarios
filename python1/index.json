@@ -11,20 +11,13 @@
                 "text": "step0.md"
             },
             {
-                "title": "Запускаем прометеус",
+                "title": "Задание 2",
                 "text": "step1.md"
             },
             {
-                "title": "Инструментируем сервис",
+                "title": "Задание 3",
                 "text": "step2.md"
-            },
-            {
-                "title": "Нагружаем сервис и смотрим метрики",
-                "text": "step3.md"
-            },
-            {
-                "title": "Задание",
-                "text": "step4.md"
+            }
             }
         ],
         "intro": {
@@ -41,6 +34,8 @@
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
 				{"file": "step1.py", "target": "/usr/local/bin/", "chmod": "+x"}
+				{"file": "step2.py", "target": "/usr/local/bin/", "chmod": "+x"}
+				{"file": "step3.py", "target": "/usr/local/bin/", "chmod": "+x"}
             ]
         },
         "finish": {
