@@ -6,7 +6,7 @@ def find_min(var_1, var_2, var_3):
     
     return min
 
-print(find_min(3,5))
+print(find_min(3, 5, -1))
 
 </pre>
 
