@@ -15,7 +15,11 @@ print(find_min(1,2))
 python3 step0.py
 ```{{execute}}
 
-Результат вы будете видеть в консоле справа.
+Результат вы будете видеть в консоли справа.
 
+Для тестирования
+```
+python3 test_cases.py TestAssignment0
+```{{execute}}
 
 
