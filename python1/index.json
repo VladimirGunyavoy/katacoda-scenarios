@@ -50,7 +50,8 @@
         "./app/metrics.py",
         "results.txt",
 		"step0.py",
-		"step1.py"
+		"step1.py", 
+		"test_cases.py"
     ],
     "environment": {
         "showdashboard": true,
