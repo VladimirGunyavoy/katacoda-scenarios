@@ -13,7 +13,8 @@
             },
             {
                 "title": "Задание 2",
-                "text": "step1.md"
+                "text": "step1.md", 
+		"checkPolicyName": "step0"
             },
             {
                 "title": "Задание 3",

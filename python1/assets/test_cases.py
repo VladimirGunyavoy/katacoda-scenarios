@@ -12,12 +12,20 @@ sys.path.append("/root")
 with contextlib.redirect_stdout(open(os.devnull, "w")):
     from step0 import find_min  # Импортируем функцию из файла пользователя
 
-# Тесты для задания 0
+# Тесты для задания 1
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
         self.assertEqual(find_min(1, 2), 1)
         self.assertEqual(find_min(2, 1), 1)
         self.assertEqual(find_min(-1, 1), -1)
+        # Добавить больше тестовых случаев по необходимости
+
+# Тесты для задания 2
+class TestAssignment0(unittest.TestCase):
+    def test_find_min(self):
+        self.assertEqual(find_min(1, 2, 3), 1)
+        self.assertEqual(find_min(2, -1, 3), -1)
+        self.assertEqual(find_min(2, 5, 3), 2)
         # Добавить больше тестовых случаев по необходимости
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
