@@ -9,6 +9,7 @@
             {
                 "title": "Задание 1",
                 "text": "step0.md"
+		"checkPolicyName": "step0"
             },
             {
                 "title": "Задание 2",
