@@ -18,7 +18,8 @@
             },
             {
                 "title": "Задание 3",
-                "text": "step2.md"
+                "text": "step2.md",
+		"checkPolicyName": "step2"
             },
             {
                 "title": "Поздравляю с успешным выполнением заданий!",
