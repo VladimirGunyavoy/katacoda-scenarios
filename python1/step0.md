@@ -1,4 +1,8 @@
-1111
+<details open>
+  <summary>Hello</summary>
+  World!
+</details>
+
 Откройте файл
 
 `step0.py`{{open}}
