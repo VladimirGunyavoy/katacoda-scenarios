@@ -64,7 +64,7 @@
     ],
     "environment": {
         "showdashboard": true,
-        "dashboards": [{"name": Python 1", "port": 9090}],
+        "dashboards": [{"name": "Python 1", "port": 9090}],
         "uilayout": "editor-terminal",
         "uisettings": "py",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
