@@ -24,7 +24,7 @@ class TestAssignment0(unittest.TestCase):
 
 # Тесты для задания 2
 class TestAssignment1(unittest.TestCase):
-    def test_find_min(self):
+    def test_find_min2(self):
         self.assertEqual(find_min2(1, 2, 3), 1)
         self.assertEqual(find_min2(2, -1, 3), -1)
         self.assertEqual(find_min2(2, 5, 3), 2)
@@ -32,7 +32,7 @@ class TestAssignment1(unittest.TestCase):
 
 # Тесты для задания 3
 class TestAssignment2(unittest.TestCase):
-    def test_find_min(self):
+    def test_find_equal(self):
         self.assertEqual(find_equal(1, 10, 5), 1)
         self.assertEqual(find_equal(2, 17, 17), 2)
         self.assertEqual(find_equal(5, 5, 5), 3)
@@ -112,4 +112,3 @@ if __name__ == '__main__':
         print(result.jsonify())
 
 
-#для запуска - python3 test_cases.py TestAssignment0
