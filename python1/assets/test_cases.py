@@ -31,7 +31,7 @@ class TestAssignment1(unittest.TestCase):
         # Добавить больше тестовых случаев по необходимости
 
 # Тесты для задания 3
-class TestAssignment1(unittest.TestCase):
+class TestAssignment2(unittest.TestCase):
     def test_find_min(self):
         self.assertEqual(find_equal(1, 10, 5), 1)
         self.assertEqual(find_equal2, 17, 17), 2)
