@@ -12,7 +12,7 @@ sys.path.append("/root")
 with contextlib.redirect_stdout(open(os.devnull, "w")):
     from step0 import find_min  # Импортируем функцию из файла пользователя
     from step1 import find_min2  # Импортируем функцию из файла пользователя
-    from step2 import assertEqual  # Импортируем функцию из файла пользователя
+    from step2 import find_equal  # Импортируем функцию из файла пользователя
 
 # Тесты для задания 1
 class TestAssignment0(unittest.TestCase):
