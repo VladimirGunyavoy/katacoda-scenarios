@@ -19,6 +19,10 @@
             {
                 "title": "Задание 3",
                 "text": "step2.md"
+            },
+            {
+                "title": "Поздравляю с успешным выполнением заданий!",
+                "text": "step3.md"
             }
         ],
         "intro": {
@@ -36,6 +40,7 @@
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
 				{"file": "step0.py", "target": "/root"},
 				{"file": "step1.py", "target": "/root"},		
+				{"file": "step2.py", "target": "/root"},	
 				{"file": "test_cases.py", "target": "/usr/local/lib/"}			
             ]
         },
@@ -53,11 +58,12 @@
         "results.txt",
 		"step0.py",
 		"step1.py", 
+		"step2.py", 
 		"test_cases.py"
     ],
     "environment": {
         "showdashboard": true,
-        "dashboards": [{"name": "Prometheus", "port": 9090}],
+        "dashboards": [{"name": Python 1", "port": 9090}],
         "uilayout": "editor-terminal",
         "uisettings": "py",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
