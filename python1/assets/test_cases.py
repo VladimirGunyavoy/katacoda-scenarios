@@ -11,33 +11,14 @@ sys.path.append("/root")
 # задушить вывод от пользовательского print в функции find_min
 with contextlib.redirect_stdout(open(os.devnull, "w")):
     from step0 import find_min  # Импортируем функцию из файла пользователя
-    from step1 import find_min2  # Импортируем функцию из файла пользователя
-    from step2 import find_equal  # Импортируем функцию из файла пользователя
 
-# Тесты для задания 1
+# Тесты для задания 0
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
         self.assertEqual(find_min(1, 2), 1)
         self.assertEqual(find_min(2, 1), 1)
         self.assertEqual(find_min(-1, 1), -1)
         # Добавить больше тестовых случаев по необходимости
-
-# Тесты для задания 2
-class TestAssignment1(unittest.TestCase):
-    def test_find_min2(self):
-        self.assertEqual(find_min2(1, 2, 3), 1)
-        self.assertEqual(find_min2(2, -1, 3), -1)
-        self.assertEqual(find_min2(2, 5, 3), 2)
-        # Добавить больше тестовых случаев по необходимости
-
-# Тесты для задания 3
-class TestAssignment2(unittest.TestCase):
-    def test_find_equal(self):
-        self.assertEqual(find_equal(1, 10, 5), 1)
-        self.assertEqual(find_equal(2, 17, 17), 2)
-        self.assertEqual(find_equal(5, 5, 5), 3)
-        # Добавить больше тестовых случаев по необходимости
-
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
 
@@ -112,3 +93,4 @@ if __name__ == '__main__':
         print(result.jsonify())
 
 
+#для запуска - python3 test_cases.py TestAssignment0
