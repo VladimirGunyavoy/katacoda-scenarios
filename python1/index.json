@@ -46,7 +46,7 @@
 				{"file": "step2.py", "target": "/root"},	
 				{"file": "test_cases0.py", "target": "/usr/local/lib/"},
 				{"file": "test_cases1.py", "target": "/usr/local/lib/"},			
-				{"file": "test_cases2.py", "target": "/usr/local/lib/"},
+				{"file": "test_cases2.py", "target": "/usr/local/lib/"}
             ]
         },
         "finish": {
