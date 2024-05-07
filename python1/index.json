@@ -26,6 +26,10 @@
 		"checkPolicyName": "step2",
 		"cmd": "python3 step2.py",
 		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Успех",
+                "text": "step3.md"
             }
         ],
         "intro": {
