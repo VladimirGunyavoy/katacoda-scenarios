@@ -9,14 +9,14 @@
             {
                 "title": "Задание 1",
                 "text": "step0.md",
-                "checkPolicyName": "step",
+                "checkPolicyName": "step1",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 2",
                 "text": "step1.md",
-                "checkPolicyName": "step",
+                "checkPolicyName": "step2",
 		"cmd": "python3 step1.py",
 		"openFile": "/root/step1.py"
             },
