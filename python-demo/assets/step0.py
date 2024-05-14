@@ -1,4 +1,6 @@
-def t1():
-    print('day name:  ', weekdays_list[weekday])
+import datetime
 
-print(t1())
+def t1():
+    print('Day of week: ', datetime.datetime.today().weekday())
+
+t1()
