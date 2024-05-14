@@ -4,6 +4,7 @@ from pprint import pprint
 import os
 import sys
 import json
+import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
