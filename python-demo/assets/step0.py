@@ -1,5 +1,4 @@
-def find_min(var_1, var_2):
-    #Вставьте свой код ниже
-    return min
+def t1():
+    print('day name:  ', weekdays_list[weekday])
 
-print(find_min(1,2))
+print(t1())
