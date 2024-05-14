@@ -8,7 +8,7 @@ import json
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
 
-# задушить вывод от пользовательского print в функции find_min
+# задушить вывод от пользовательского print в функции 
 with contextlib.redirect_stdout(open(os.devnull, "w")):
     from step0 import t1  # Импортируем функцию из файла пользователя
 
