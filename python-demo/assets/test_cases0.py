@@ -15,7 +15,7 @@ with contextlib.redirect_stdout(open(os.devnull, "w")):
 # Тесты для задания 0
 class TestAssignment0(unittest.TestCase):
     def test_t1(self):
-        self.assertEqual(t1(), "year: "+str(datetime.datetime.today().year))
+        self.assertEqual(t1(), "year: "+str(datetime.datetime.today().year()))
         # Добавить больше тестовых случаев по необходимости
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
