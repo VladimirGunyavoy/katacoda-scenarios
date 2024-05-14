@@ -12,8 +12,8 @@
             "id": "python1"
         },
         {
-            "title": "Python 1",
-            "description": Демонстрационное задание по ЭК Python Основы Python",
+            "title": "Python Demo",
+            "description": "Демонстрационное задание по ЭК Python Основы Python",
             "id": "python-demo"
         }
     ]
