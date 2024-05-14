@@ -1,6 +1,6 @@
 import datetime
 
 def t1():
-    print('Day of week: ', datetime.datetime.today().weekday())
+    return 'Day of week: ' + str(datetime.datetime.today().weekday())
 
-t1()
+print(t1())
