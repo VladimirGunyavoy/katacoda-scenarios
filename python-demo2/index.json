@@ -7,15 +7,14 @@
     "details": {
         "steps": [
             {
-                "title": "Задание 1",
+                "title": "Какие бывают числа",
                 "text": "step0.md",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
-                "title": "Задание 2",
+                "title": "Integer",
                 "text": "step1.md",
-                "checkPolicyName": "step1",
 		"cmd": "python3 step1.py",
 		"openFile": "/root/step1.py"
             },
