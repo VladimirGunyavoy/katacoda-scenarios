@@ -15,6 +15,11 @@
             "title": "Python Demo",
             "description": "Демонстрационное задание по ЭК Python Основы Python",
             "id": "python-demo"
+        },
+        {
+            "title": "Python Demo2",
+            "description": "Демонстрация теории и не проверяемых заданий",
+            "id": "python-demo2"
         }
     ]
   }
