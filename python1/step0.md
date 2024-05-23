@@ -6,6 +6,9 @@
 !["Очень увлекательное описание"](https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png "заголовок")
 
 
+!["другое очень увлекательное описание"](assets\katacoda_promql_app_.png)
+
+
 
 Для запуска кода используйте кнопку **"Выполнить"** справа.
 Результат вы будете видеть в консоли справа.
