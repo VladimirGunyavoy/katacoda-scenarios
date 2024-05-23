@@ -1,8 +1,11 @@
 **Допишите функцию, которая принимает 2 числа, сравнивает между собой и возвращает наименьшее.**
 
 **hello yopta**
+```
+url1 <- "https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png"
+```
 
-![my image text](assets\katacoda_prom_target_down.png "my title")
+![my image text]("https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png" "my title")
 
 Для запуска кода используйте кнопку **"Выполнить"** справа.
 Результат вы будете видеть в консоли справа.
