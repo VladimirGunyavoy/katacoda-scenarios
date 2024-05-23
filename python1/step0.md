@@ -5,6 +5,9 @@
 
 ![my image text]("https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png")
 
+<image src="https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png" alt="Описание картинки">
+
+
 Для запуска кода используйте кнопку **"Выполнить"** справа.
 Результат вы будете видеть в консоли справа.
 
