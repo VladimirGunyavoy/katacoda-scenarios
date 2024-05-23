@@ -2,7 +2,7 @@
 
 **hello yopta**
 
-![image text](assets\katacoda_prom_target_down.png)
+![my image text](assets\katacoda_prom_target_down.png "my title")
 
 Для запуска кода используйте кнопку **"Выполнить"** справа.
 Результат вы будете видеть в консоли справа.
