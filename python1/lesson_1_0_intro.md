@@ -1,7 +1,7 @@
-# ЙОПТА
+# ЙОП
 
 
-## Пизда
+## а ну заливайся!
 
 # Переменные
 
@@ -67,13 +67,14 @@ import datetime
 weekday = datetime.datetime.today().weekday()
 
 print('day number:', weekday)
+
 weekdays_list = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 
 print('day name:  ', weekdays_list[weekday])
 ```
 
-    day number: 3
-    day name:   thu
+    day number: 4
+    day name:   fri
     
 
 Сейчас не очень понятно, что тут происходит, но структура в коде уже читается.
