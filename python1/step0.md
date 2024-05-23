@@ -2,17 +2,8 @@
 
 **hello yopta**
 
-```{r, echo=FALSE}
-# Define variable containing url
-url <- "http://www.online-image-editor.com//styles/2014/images/example_image.png"
-```
-## Some cat!
-<center><img src="`r url`"></center>
 
-## Alternatively...
-![](`r url`)
-
-![my image text]("https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png" "my title")
+![my image text]("https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png")
 
 Для запуска кода используйте кнопку **"Выполнить"** справа.
 Результат вы будете видеть в консоли справа.
