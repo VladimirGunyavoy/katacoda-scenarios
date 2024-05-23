@@ -3,7 +3,7 @@
 **hello yopta**
 
 
-![Текст с описанием картинки](https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png)
+!["Очень увлекательное описание"](https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png "заголовок")
 
 
 
