@@ -3,9 +3,8 @@
 **hello yopta**
 
 
-![my image text]("https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png")
+![Текст с описанием картинки](https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png)
 
-<image src="https://raw.githubusercontent.com/VladimirGunyavoy/katacoda-scenarios/test_0/python1/assets/katacoda_prom_target_down.png" alt="Описание картинки">
 
 
 Для запуска кода используйте кнопку **"Выполнить"** справа.
