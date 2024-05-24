@@ -9,7 +9,7 @@
             {
                 "title": "Задание 1",
                 "text": "lesson_1_1_problem.md",
-                "checkPolicyName": "step0",
+                "checkPolicyName": "lesson_1_1_problem",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
