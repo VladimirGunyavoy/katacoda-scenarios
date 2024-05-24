@@ -8,7 +8,7 @@
         "steps": [
             {
                 "title": "Задание 1",
-                "text": "step0.md",
+                "text": "lesson_1_1_problem.md",
                 "checkPolicyName": "step0",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
