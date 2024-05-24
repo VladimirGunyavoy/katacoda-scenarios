@@ -7,18 +7,47 @@
     "details": {
         "steps": [
             {
-                "title": "Задание 1",
+                "title": "Введение",
                 "text": "lesson_1_0_intro.md",
                 "checkPolicyName": "step0",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
+
             {
-                "title": "Задание 2",
-                "text": "step1.md",
+                "title": "Задание 1",
+                "text": "lesson_1_1_problem.md",
                 "checkPolicyName": "step1",
 		"cmd": "python3 step1.py",
 		"openFile": "/root/step1.py"
+            },
+            {
+                "title": "Теория 2",
+                "text": "lesson_1_2_1_theory",
+		"checkPolicyName": "step2",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 2",
+                "text": "lesson_1_2_1_practice",
+		"checkPolicyName": "step2",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 3",
+                "text": "step2.md",
+		"checkPolicyName": "step2",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 4",
+                "text": "step2.md",
+		"checkPolicyName": "step2",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
             },
             {
                 "title": "Задание 3",
