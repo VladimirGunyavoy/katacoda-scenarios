@@ -33,7 +33,7 @@
             }
         ],
         "intro": {
-            "text": "lesson_1_0_intro.md",
+            "text": "intro.md",
             "background": "courseBase.sh",
             "credits": ""
         },
