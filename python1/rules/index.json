@@ -8,56 +8,37 @@
         "steps": [
             {
                 "title": "Задание 1",
-                "text": "lesson_1_1_problem.md",
-                "checkPolicyName": "lesson_1_1_problem",
+                "text": "lesson_1_part_1_problem_1.md",
+                "checkPolicyName": "lesson_1_part_1_problem_1",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 2",
-                "text": "lesson_1_2_2_problem.md",
-                "checkPolicyName": "lesson_1_2_2_problem",
+                "text": "lesson_1_part_1_problem_2.md",
+                "checkPolicyName": "lesson_1_part_1_problem_2",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 3",
-                "text": "lesson_1_3_2_problem.md",
-		"checkPolicyName": "lesson_1_3_2_problem",
+                "text": "lesson_1_part_1_problem_3.md",
+		"checkPolicyName": "lesson_1_part_1_problem_3",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 4",
-                "text": "lesson_1_4_2_problem.md",
-		"checkPolicyName": "lesson_1_4_2_problem",
-		"cmd": "python3 step0.py",
-		"openFile": "/root/step0.py"
-            },
-            {
-                "title": "Задание 5",
-                "text": "lesson_1_5_2_problem.md",
-		"checkPolicyName": "lesson_1_5_2_problem",
-		"cmd": "python3 step0.py",
-		"openFile": "/root/step0.py"
-            },
-            {
-                "title": "Задание 6",
-                "text": "lesson_1_6_2_problem.md",
-		"checkPolicyName": "lesson_1_6_2_problem",
+                "text": "lesson_1_part_1_problem_4.md",
+		"checkPolicyName": "lesson_1_part_1_problem_4",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Успех",
-                "text": "step3.md"
+                "text": "lesson_1_part_1_outro.md"
             }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "courseBase.sh",
-            "credits": ""
-        },
         "assets": {
             "host01": [
                 {"file": "send.sh", "target": "/usr/local/bin/", "chmod": "+x"},
