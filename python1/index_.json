@@ -53,6 +53,11 @@
                 "text": "step3.md"
             }
         ],
+        "intro": {
+            "text": "intro.md",
+            "background": "courseBase.sh",
+            "credits": ""
+        },
         "assets": {
             "host01": [
                 {"file": "send.sh", "target": "/usr/local/bin/", "chmod": "+x"},
