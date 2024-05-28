@@ -17,22 +17,22 @@
                 "title": "Задание 2",
                 "text": "lesson_1_2_2_problem.md",
                 "checkPolicyName": "lesson_1_2_2_problem",
-		"cmd": "python3 step1.py",
-		"openFile": "/root/step1.py"
+		"cmd": "python3 step0.py",
+		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 3",
                 "text": "lesson_1_3_2_problem.md",
 		"checkPolicyName": "lesson_1_3_2_problem",
-		"cmd": "python3 step2.py",
-		"openFile": "/root/step2.py"
+		"cmd": "python3 step0.py",
+		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 4",
                 "text": "lesson_1_4_2_problem.md",
 		"checkPolicyName": "lesson_1_4_2_problem",
-		"cmd": "python3 step2.py",
-		"openFile": "/root/step2.py"
+		"cmd": "python3 step0.py",
+		"openFile": "/root/step0.py"
             },
             {
                 "title": "Успех",
