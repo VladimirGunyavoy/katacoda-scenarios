@@ -22,8 +22,29 @@
             },
             {
                 "title": "Задание 3",
-                "text": "step2.md",
-		"checkPolicyName": "step2",
+                "text": "lesson_1_3_2_problem.md",
+		"checkPolicyName": "lesson_1_3_2_problem",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 4",
+                "text": "lesson_1_4_2_problem.md",
+		"checkPolicyName": "lesson_1_4_2_problem",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 5",
+                "text": "lesson_1_5_2_problem.md",
+		"checkPolicyName": "lesson_1_5_2_problem",
+		"cmd": "python3 step2.py",
+		"openFile": "/root/step2.py"
+            },
+            {
+                "title": "Задание 6",
+                "text": "lesson_1_6_2_problem.md",
+		"checkPolicyName": "lesson_1_6_2_problem",
 		"cmd": "python3 step2.py",
 		"openFile": "/root/step2.py"
             },
