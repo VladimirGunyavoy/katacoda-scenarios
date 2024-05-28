@@ -9,35 +9,35 @@
             {
                 "title": "Задание 1",
                 "text": "lesson_1_part_2_problem_1.md",
-                "checkPolicyName": "lesson_1_part_1_problem_1",
+                "checkPolicyName": "lesson_1_part_2_problem_1",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 2",
                 "text": "lesson_1_part_2_problem_2.md",
-                "checkPolicyName": "lesson_1_part_1_problem_2",
+                "checkPolicyName": "lesson_1_part_2_problem_2",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 3",
                 "text": "lesson_1_part_2_problem_3.md",
-		"checkPolicyName": "lesson_1_part_1_problem_3",
+		"checkPolicyName": "lesson_1_part_2_problem_3",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 4",
                 "text": "lesson_1_part_2_problem_4.md",
-		"checkPolicyName": "lesson_1_part_1_problem_4",
+		"checkPolicyName": "lesson_1_part_2_problem_4",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Задание 5",
                 "text": "lesson_1_part_2_problem_5.md",
-		"checkPolicyName": "lesson_1_part_1_problem_5",
+		"checkPolicyName": "lesson_1_part_2_problem_5",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
