@@ -41,6 +41,7 @@
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
+            
             {
                 "title": "Задание 6",
                 "text": "lesson_1_6_2_problem.md",
@@ -48,9 +49,10 @@
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
             },
+
             {
                 "title": "Успех",
-                "text": "step3.md"
+                "text": "lesson_1_part_1_outro.md"
             }
         ],
         "intro": {
