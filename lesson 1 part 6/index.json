@@ -26,17 +26,6 @@
 		"checkPolicyName": "problem_3",
 		"cmd": "python3 step0.py",
 		"openFile": "/root/step0.py"
-            },
-            {
-                "title": "Задание 4",
-                "text": "problem_4.md",
-		"checkPolicyName": "problem_4",
-		"cmd": "python3 step0.py",
-		"openFile": "/root/step0.py"
-            },
-            {
-                "title": "Успех",
-                "text": "outro.md"
             }
         ],
         "intro": {
