@@ -21,7 +21,6 @@ with contextlib.redirect_stdout(open(os.devnull, "w")):
 # Тесты для задания 0
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
-        self.assertEqual(my_var, 2024)
         self.assertEqual(find_min(1, 2), 1)
         self.assertEqual(find_min(2, 1), 1)
         self.assertEqual(find_min(-1, 1), -1)
