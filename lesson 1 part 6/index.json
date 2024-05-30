@@ -35,13 +35,6 @@
 		"openFile": "/root/step0.py"
             },
             {
-                "title": "Задание 5",
-                "text": "problem_5.md",
-		"checkPolicyName": "problem_5",
-		"cmd": "python3 step0.py",
-		"openFile": "/root/step0.py"
-            },
-            {
                 "title": "Успех",
                 "text": "outro.md"
             }
