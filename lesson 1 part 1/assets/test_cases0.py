@@ -12,6 +12,7 @@ sys.path.append("/root")
 with contextlib.redirect_stdout(open(os.devnull, "w")):
     from step0 import find_min  # Импортируем функцию из файла пользователя
     from step0 import my_var
+    print('hui', my_var)
 # print_ = print
 
 # def print(*args, **kwargs):
