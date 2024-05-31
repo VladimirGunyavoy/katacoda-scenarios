@@ -61,7 +61,7 @@ class TestAssignment0(unittest.TestCase):
 
         
         # assert False, f"{os.getcwd()}"
-        self.assertEqual(1, 2, f"{os.getcwd()}")
+        self.assertEqual(1, 2, f"{os.listdir()}")
 
 
         pass
