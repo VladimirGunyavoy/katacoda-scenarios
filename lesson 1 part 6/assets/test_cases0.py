@@ -10,6 +10,10 @@ import subprocess
 sys.path.append("/root")
 
 
+output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
+assert True, output
+
+
 
 # задушить вывод от пользовательского print в функции find_min
 # with contextlib.redirect_stdout(open(os.devnull, "w")):
