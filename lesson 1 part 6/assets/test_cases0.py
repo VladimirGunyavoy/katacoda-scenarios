@@ -61,7 +61,7 @@ class TestAssignment0(unittest.TestCase):
 
         
         # assert False, f"{os.getcwd()}"
-        output = subprocess.check_output(['python3', 'print_script.py'], universal_newlines=True)
+        output = subprocess.check_output(['python', 'step0.py'], universal_newlines=True)
 
         self.assertEqual(1, 2, f"{output}")
 
