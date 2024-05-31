@@ -37,7 +37,7 @@ class TestAssignment0(unittest.TestCase):
 
 
 
-        process = subprocess.Popen(['python', 'lesson 1 part 6/assets/step0.py'], stdout=subprocess.PIPE, universal_newlines=True)
+        process = subprocess.Popen(['python', 'root/step0.py'], stdout=subprocess.PIPE, universal_newlines=True)
         output, _ = process.communicate()
         output = output[:-1]
 
