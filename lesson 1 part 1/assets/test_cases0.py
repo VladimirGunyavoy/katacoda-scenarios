@@ -34,7 +34,7 @@ class TestAssignment0(unittest.TestCase):
 
         # self.assertEqual(1, 2, f'year')
 
-        self.assertEqual(output, f'year: {datetime.datetime.today().year}')
+        self.assertEqual(output, f'year: {datetime.datetime.today().year}', 'Неверный год. Аллах Акбар')
 
         pass
         # # Добавить больше тестовых случаев по необходимости
