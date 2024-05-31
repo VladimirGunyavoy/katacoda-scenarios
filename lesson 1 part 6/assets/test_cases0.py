@@ -61,10 +61,15 @@ class TestAssignment0(unittest.TestCase):
 
         
         # assert False, f"{os.getcwd()}"
+
+
+
+
+
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
 
-        self.assertEqual(output, 'fucking a: 5')
+        self.assertEqual(output, 'a: 5')
 
 
         pass
