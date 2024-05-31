@@ -11,8 +11,8 @@ import subprocess
 sys.path.append("/root")
 
 # задушить вывод от пользовательского print в функции find_min
-with contextlib.redirect_stdout(open(os.devnull, "w")):
-    from step0 import find_min  # Импортируем функцию из файла пользователя
+# with contextlib.redirect_stdout(open(os.devnull, "w")):
+#     from step0 import find_min  # Импортируем функцию из файла пользователя
 
 # print_ = print
 
