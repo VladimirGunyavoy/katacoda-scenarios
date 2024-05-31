@@ -9,7 +9,8 @@ import subprocess
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
 
-assert False, os.getcwd()
+
+assert False, f"{os.getcwd()}"
 
 output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
 assert True, output
