@@ -19,6 +19,7 @@ class TestAssignment0(unittest.TestCase):
 
         
         output = subprocess.check_output(['python', 'step0.py'], universal_newlines=True)
+        print(output)
         self.assertEqual(output, 1)
         # self.assertEqual(find_min(1, 2), 1)
         # self.assertEqual(find_min(2, 1), 1)
