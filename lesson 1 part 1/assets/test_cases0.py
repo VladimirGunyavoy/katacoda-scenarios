@@ -33,6 +33,8 @@ class TestAssignment0(unittest.TestCase):
         import datetime
 
         self.assertEqual(output, f'year: {datetime.datetime.today().year}')
+
+        pass
         # # Добавить больше тестовых случаев по необходимости
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
