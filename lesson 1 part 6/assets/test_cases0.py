@@ -64,7 +64,7 @@ class TestAssignment0(unittest.TestCase):
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
 
-        self.assertEqual(output, 'fuck yourself', f"{output}")
+        self.assertEqual(output, 'fucking a: 5')
 
 
         pass
