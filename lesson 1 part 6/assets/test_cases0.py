@@ -10,10 +10,8 @@ import subprocess
 sys.path.append("/root")
 
 
-assert False, f"{os.getcwd()}"
-
-output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
-assert True, output
+# output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
+# assert True, output
 
 
 
@@ -44,22 +42,27 @@ class TestAssignment0(unittest.TestCase):
 
 
         # process = subprocess.Popen(['python', 'lesson 1 part 6/assets/step0.py'], stdout=subprocess.PIPE, universal_newlines=True)
-        process = subprocess.Popen(['python3', 'step0.py'])
+        # process = subprocess.Popen(['python3', 'step0.py'])
         
-        output, _ = process.communicate()
-        output = output[:-1]
+        # output, _ = process.communicate()
+        # output = output[:-1]
 
-        print(output)
+        # print(output)
 
         # print()
         # print('output is')
         # print(output)
         # print(output == '1')
         # print()
-        self.assertEqual(output, 'fuck yourself')
+        # self.assertEqual(output, 'fuck yourself')
         # self.assertEqual(find_min(1, 2), 1)
         # self.assertEqual(find_min(2, 1), 1)
         # self.assertEqual(find_min(-1, 1), -1)
+
+        
+        # assert False, f"{os.getcwd()}"
+        self.assertEqual(1, 2, f"{os.getcwd()}")
+
 
         pass
         # Добавить больше тестовых случаев по необходимости
