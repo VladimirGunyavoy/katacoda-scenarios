@@ -32,7 +32,7 @@ class TestAssignment0(unittest.TestCase):
         # self.assertEqual(find_min(2, 1), 1)
         # self.assertEqual(find_min(-1, 1), -1)
 
-        raise AssertionError ('Аллфх Акбар!!!')
+        raise AssertionError ('\n\n\n\n Аллфх Акбар!!!')
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
