@@ -21,22 +21,33 @@ sys.path.append("/root")
 #     return args, kwargs
 
 # Тесты для задания 0
+
+answers = (["vladimir"], "123"), (["boris"], "345")
+
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
-    #     self.assertEqual(find_min(1, 2), 1)
-    #     self.assertEqual(find_min(2, 1), 1)
-    #     self.assertEqual(find_min(-1, 1), -1)
+
+        
+        # self.assertEqual(find_min(1, 2), 1)
+        # self.assertEqual(find_min(2, 1), 1)
+        # self.assertEqual(find_min(-1, 1), -1)
+
+        raise AssertionError ('Аллфх Акбар!!!')
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
+        self.assertEqual(output, f'year: {datetime.datetime.today().year}', 'Неверный год. Аллах Акбар')
+
+        # import user_func
+
+        # for answer in answers:
+        #     self.assertEqual(user_func, answer)
 
         import datetime
 
         # self.assertEqual(1, 2, f'year')
 
-        self.assertEqual(output, f'year: {datetime.datetime.today().year}', 'Неверный год. Аллах Акбар')
 
-        pass
         # # Добавить больше тестовых случаев по необходимости
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
