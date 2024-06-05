@@ -36,7 +36,7 @@ class TestAssignment0(unittest.TestCase):
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
         
-        self.assertEqual(output, f'число деревьевц: 10', 'Неверный вывод')
+        self.assertEqual(output, f'число деревьев: 10', 'Неверный вывод')
 
         # import user_func
 
