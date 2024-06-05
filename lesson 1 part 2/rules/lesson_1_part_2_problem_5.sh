@@ -1,4 +1,3 @@
 #!/bin/bash
 
-python3 /usr/local/lib/test_cases6
-.py
+python3 /usr/local/lib/test_cases5.py
