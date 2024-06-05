@@ -35,9 +35,20 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-        
-        self.assertEqual(output, f'стоимость кофе: 1.99', 'Неверный вывод')
 
+        coffee_price = 1.99
+        doughnut_price = 2.49
+        cost = coffee_price + doughnut_price
+        discount = 0.87
+        with_discount = cost - discount
+
+        s1 = f'стоимость кофе: {coffee_price}'
+        s2 = f'стоимость пончика: {doughnut_price}'
+        s3 = f'общая стоимость: {cost}'
+        s4 = f'скидка: {discount}'
+        s5 = f'общая стоимость со скидкой {with_discount}'
+
+        self.assertEqual(output, f'{s1}\n{s2}\n{s3}\n{s4}\n{s5}', 'Неверный вывод')
         # import user_func
 
         # for answer in answers:
