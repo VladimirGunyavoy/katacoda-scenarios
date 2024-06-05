@@ -4,21 +4,53 @@ from pprint import pprint
 import os
 import sys
 import json
+import subprocess
+
+import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
 
 # задушить вывод от пользовательского print в функции find_min
-with contextlib.redirect_stdout(open(os.devnull, "w")):
-    from step0 import find_min  # Импортируем функцию из файла пользователя
+# with contextlib.redirect_stdout(open(os.devnull, "w")):
+#     from step0 import find_min  # Импортируем функцию из файла пользователя
+
+# print_ = print
+
+# def print(*args, **kwargs):
+#     print_(*args, **kwargs)
+#     return args, kwargs
 
 # Тесты для задания 0
+
+
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
-        self.assertEqual(find_min(1, 2), 1)
-        self.assertEqual(find_min(2, 1), 1)
-        self.assertEqual(find_min(-1, 1), -1)
-        # Добавить больше тестовых случаев по необходимости
+
+        
+        # self.assertEqual(find_min(1, 2), 1)
+        # self.assertEqual(find_min(2, 1), 1)
+        # self.assertEqual(find_min(-1, 1), -1)
+
+        # raise AssertionError ('\n\n\n\n Аллфх Акбар!!!')
+
+        output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
+        output = output[:-1]
+
+        
+        import datetime
+        self.assertEqual(output, f'число деревьевц: 21', 'Неверный вывод')
+
+        # import user_func
+
+        # for answer in answers:
+        #     self.assertEqual(user_func, answer)
+
+
+        # self.assertEqual(1, 2, f'year')
+
+
+        # # Добавить больше тестовых случаев по необходимости
 
 # Если у вас есть другие задания, добавьте классы для их тестов здесь
 
@@ -94,3 +126,5 @@ if __name__ == '__main__':
 
 
 #для запуска - python3 test_cases.py TestAssignment0
+
+
