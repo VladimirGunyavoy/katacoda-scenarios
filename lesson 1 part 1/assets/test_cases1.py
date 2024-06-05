@@ -6,6 +6,7 @@ import sys
 import json
 import subprocess
 
+import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
@@ -22,7 +23,6 @@ sys.path.append("/root")
 
 # Тесты для задания 0
 
-answers = (["vladimir"], "123"), (["boris"], "345")
 
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
@@ -36,6 +36,9 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
+
+        
+        import datetime
         self.assertEqual(output, f'year: {datetime.datetime.today().year}', 'Неверный год. Аллах Акбар')
 
         # import user_func
@@ -43,7 +46,6 @@ class TestAssignment0(unittest.TestCase):
         # for answer in answers:
         #     self.assertEqual(user_func, answer)
 
-        import datetime
 
         # self.assertEqual(1, 2, f'year')
 
@@ -124,3 +126,5 @@ if __name__ == '__main__':
 
 
 #для запуска - python3 test_cases.py TestAssignment0
+
+
