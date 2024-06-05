@@ -39,7 +39,7 @@ class TestAssignment0(unittest.TestCase):
 
         
         import datetime
-        self.assertEqual(output, f'число деревьевц: 10.5', 'Неверный вывод')
+        self.assertEqual(output, f'число деревьев: 10.5', 'Неверный вывод')
 
         # import user_func
 
