@@ -41,14 +41,16 @@ class TestAssignment0(unittest.TestCase):
         cost = coffee_price + doughnut_price
         discount = 0.87
         with_discount = cost - discount
+        all_cost = with_discount * 4
 
         s1 = f'стоимость кофе: {coffee_price}'
         s2 = f'стоимость пончика: {doughnut_price}'
         s3 = f'общая стоимость: {cost}'
         s4 = f'скидка: {discount}'
-        s5 = f'общая стоимость со скидкой {with_discount}'
+        s5 = f'общая стоимость со скидкой: {with_discount}'
+        s6 = f'общая стоимость на всех: {all_cost}'
 
-        self.assertEqual(output, f'{s1}\n{s2}\n{s3}\n{s4}\n{s5}', 'Неверный вывод')
+        self.assertEqual(output, f'{s1}\n{s2}\n{s3}\n{s4}\n{s5}\n{s6}', 'Неверный вывод')
         # import user_func
 
         # for answer in answers:
