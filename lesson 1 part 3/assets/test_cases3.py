@@ -7,7 +7,6 @@ import json
 import subprocess
 
 
-
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
 
@@ -34,24 +33,25 @@ class TestAssignment0(unittest.TestCase):
 
         # raise AssertionError ('\n\n\n\n Аллфх Акбар!!!')
 
-        # output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
-        # output = output[:-1]
+        output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
+        output = output[:-1]
 
-        # coffee_price = 1.99
-        # doughnut_price = 2.49
-        # cost = coffee_price + doughnut_price
+        coffee_price = 1.99
+        doughnut_price = 2.49
+        cost = coffee_price + doughnut_price
 
-        # discount = 0.87
-        # with_discount = cost - discount
+        s1 = f'стоимость кофе: {coffee_price}'
+        s2 = f'стоимость пончика: {doughnut_price}'
+        s3 = f'общая стоимость: {cost}'
 
-        # s1 = f'стоимость кофе: {coffee_price}'
-        # s2 = f'стоимость пончика: {doughnut_price}'
-        # s3 = f'общая стоимость: {cost}'
-        # s4 = f'скидка: {discount}'
-        # s5 = f'общая стоимость со скидкой: {with_discount}'
+        self.assertEqual(output, f'{s1}\n{s2}\n{s3}', 'Неверный вывод')
+        # import user_func
 
-        # self.assertEqual(output, f'{s1}\n{s2}\n{s3}\n{s4}\n{s5}', 'Неверный вывод')
-        pass
+        # for answer in answers:
+        #     self.assertEqual(user_func, answer)
+
+
+        # self.assertEqual(1, 2, f'year')
 
 
         # # Добавить больше тестовых случаев по необходимости
