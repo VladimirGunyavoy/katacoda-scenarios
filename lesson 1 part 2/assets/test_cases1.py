@@ -6,7 +6,6 @@ import sys
 import json
 import subprocess
 
-import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
@@ -36,9 +35,6 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-
-        assert False, f'output'
-
         
         self.assertEqual(output, f'число деревьевц: 10', 'Неверный вывод')
 
