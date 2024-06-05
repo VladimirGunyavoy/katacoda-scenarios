@@ -23,7 +23,6 @@ sys.path.append("/root")
 
 # Тесты для задания 0
 
-answers = (["vladimir"], "123"), (["boris"], "345")
 
 class TestAssignment0(unittest.TestCase):
     def test_find_min(self):
@@ -37,7 +36,7 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-        self.assertEqual(output, f'month: {datetime.datetime.today().month}', 'Неверный мечяц. Аллах Акбар')
+        self.assertEqual(output, f'day: {datetime.datetime.today().day}', 'Неверный день. Аллах Акбар')
 
         # import user_func
 
