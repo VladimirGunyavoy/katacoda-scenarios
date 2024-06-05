@@ -35,7 +35,7 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-        
+         
         self.assertEqual(output, f'стоимость кофе: 1.99', 'Неверный вывод')
 
         # import user_func

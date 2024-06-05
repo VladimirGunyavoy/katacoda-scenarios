@@ -5,6 +5,7 @@ import os
 import sys
 import json
 import subprocess
+import numpy as np
 
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
@@ -40,13 +41,13 @@ class TestAssignment0(unittest.TestCase):
         doughnut_price = 2.49
         cost = coffee_price + doughnut_price
         discount = 0.87
-        with_discount = cost - discount
+        with_discount = cost - round(discount, 2)
 
         s1 = f'стоимость кофе: {coffee_price}'
         s2 = f'стоимость пончика: {doughnut_price}'
         s3 = f'общая стоимость: {cost}'
         s4 = f'скидка: {discount}'
-        s5 = f'общая стоимость со скидкой {with_discount}'
+        s5 = f'общая стоимость со скидкой: {with_discount}'
 
         self.assertEqual(output, f'{s1}\n{s2}\n{s3}\n{s4}\n{s5}', 'Неверный вывод')
         # import user_func
