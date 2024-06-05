@@ -5,7 +5,7 @@ import os
 import sys
 import json
 import subprocess
-import numpy as np
+
 
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
