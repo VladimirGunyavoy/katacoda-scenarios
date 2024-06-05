@@ -6,6 +6,7 @@ import sys
 import json
 import subprocess
 
+import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
 sys.path.append("/root")
@@ -36,14 +37,13 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-        self.assertEqual(output, f'year: {datetime.datetime.today().year}', 'Неверный год. Аллах Акбар')
+        self.assertEqual(output, f'month: {datetime.datetime.today().month}', 'Неверный мечяц. Аллах Акбар')
 
         # import user_func
 
         # for answer in answers:
         #     self.assertEqual(user_func, answer)
 
-        import datetime
 
         # self.assertEqual(1, 2, f'year')
 
@@ -124,3 +124,5 @@ if __name__ == '__main__':
 
 
 #для запуска - python3 test_cases.py TestAssignment0
+
+

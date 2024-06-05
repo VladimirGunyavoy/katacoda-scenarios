@@ -37,7 +37,11 @@ class TestAssignment0(unittest.TestCase):
 
         output = subprocess.check_output(['python3', 'step0.py'], universal_newlines=True)
         output = output[:-1]
-        self.assertEqual(output, f'month: {datetime.datetime.today().month}', 'Неверный мечяц. Аллах Акбар')
+
+        year = datetime.datetime.today().year
+        month = datetime.datetime.today().month
+        day = datetime.datetime.today().day
+        self.assertEqual(output, f'day: {day}\nmonth: {month}\nyear: {year}', 'Неверное что-то. Аллах Акбар')
 
         # import user_func
 
