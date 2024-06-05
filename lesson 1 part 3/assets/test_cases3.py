@@ -41,7 +41,7 @@ class TestAssignment0(unittest.TestCase):
         doughnut_price = 2.49
         cost = coffee_price + doughnut_price
         discount = 0.87
-        with_discount = cost - round(discount, 2)
+        with_discount = cost - discount
 
         s1 = f'стоимость кофе: {coffee_price}'
         s2 = f'стоимость пончика: {doughnut_price}'
