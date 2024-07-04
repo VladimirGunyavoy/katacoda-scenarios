@@ -5,9 +5,9 @@ from checker import SberChecker
 sber_checker = SberChecker(
     filename="../tasks/step_1.py",
     tests=[
-        {"input": [[1, 2, 3]], "output": [3]},
-        {"input": [[-3, -2, -1]], "output": [-1]},
-        {"input": [[0]], "output": [0]}
+        {"args": [[1, 2, 3]], "return": 3},
+        {"args": [[-3, -2, -1]], "return": -1},
+        {"args": [[0]], "return": 0}
     ],
     call="get_last"
 )

@@ -6,11 +6,11 @@ sber_checker = SberChecker(
     filename="../tasks/08.py",
     tests=[
         {
-            "input": [],
-            "output": ["Function without args"],
+            "args": [],
+            "return": "Function without args",
         }
     ],
-    call="",
+    call="without_args",
 )
 
 result = sber_checker.run()

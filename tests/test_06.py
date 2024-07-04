@@ -6,12 +6,12 @@ sber_checker = SberChecker(
     filename="../tasks/06.py",
     tests=[
         {
-            "input": [2, 3],
-            "output": [5],
+            "args": [2, 3],
+            "return": 5,
         },
         {
-            "input": [4, 6],
-            "output": [10],
+            "args": [4, 6],
+            "return": 10,
         },
     ],
     call="add",

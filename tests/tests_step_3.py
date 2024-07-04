@@ -6,12 +6,12 @@ sber_checker = SberChecker(
     filename="../tasks/step_3.py",
     tests=[
         {
-            "input": ['arg1', 'arg2'],
-            "output": ['arg1 arg2']
+            "args": ['arg1', 'arg2'],
+            "return": 'arg1 arg2'
         },
         {
-            "input": ['one', 'two', 'three', 'four'],
-            "output": ['one two three four']
+            "args": ['one', 'two', 'three', 'four'],
+            "return": 'one two three four'
         }
     ],
     call="concat"

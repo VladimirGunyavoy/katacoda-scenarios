@@ -18,7 +18,10 @@ except:
 sber_checker = SberChecker(
     filename="../tasks/01.py",
     tests=[
-        {"output": ["а задан", "b задан"]},
+        {
+            "input": [],
+            "output": ["а задан", "b задан"]
+        },
     ],
     postcode=postcode,
 )

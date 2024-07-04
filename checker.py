@@ -23,6 +23,15 @@ class SberChecker:
             return {"error": f"File {filename} not found in current directory"}
 
     @staticmethod
+    def __check_inputs_outputs(test):
+        try:
+            if 'input' in test:
+                return test['input'], test['output']
+            return test['args'], test['return']
+        except KeyError:
+            raise ValueError("'input(args)' and/or 'output(return)' are not defined")
+
+    @staticmethod
     def __execute_function(func: str | Callable, args, file_content):
         if isinstance(func, str):
             exec(file_content, globals())
@@ -33,18 +42,17 @@ class SberChecker:
             function = func
 
         if not args:
-            result = [function()]
+            result = function()
         else:
-            result = [function(*args)]
+            result = function(*args)
         return result
 
     def __check_with_function(self, test, file_content):
-        expected_output = test.get("output", [])
-        args = test.get("input", [])
+        args, expected_return = self.__check_inputs_outputs(test)
 
         try:
             """ If output is empty, then we should try to execute solution function """
-            if not expected_output:
+            if not expected_return and expected_return != 0:
                 if self.solution:
                     user_result = self.__execute_function(self.call, args, file_content)
                     solution_result = self.__execute_function(self.solution, args, file_content)
@@ -56,15 +64,13 @@ class SberChecker:
 
             user_result = self.__execute_function(self.call, args, file_content)
 
-            passed = expected_output == user_result
+            passed = expected_return == user_result
             return passed, user_result, None
         except Exception as e:
             return False, None, f"{type(e).__name__}: {str(e)}"
 
-    @staticmethod
-    def __check_without_function(test, file_content):
-        expected_output = test["output"]
-        input_values = test.get("input", [])
+    def __check_without_function(self, test, file_content):
+        input_values, expected_output = self.__check_inputs_outputs(test)
 
         captured_output = StringIO()
         sys.stdout = captured_output
@@ -81,7 +87,7 @@ class SberChecker:
             sys.stdout = sys.__stdout__
 
     def __check_post_code(self, test, file_content):
-        expected_output = test["output"]
+        _, expected_output = self.__check_inputs_outputs(test)
 
         captured_output = StringIO()
         sys.stdout = captured_output
@@ -114,9 +120,11 @@ class SberChecker:
                 else:
                     passed, result, error = self.__check_without_function(test, file_content)
 
+                inputs, output = self.__check_inputs_outputs(test)
+
                 results[f'Test {index}'] = {
-                    'input': test["input"] if 'input' in test else "N/A",
-                    'expected': test["output"],
+                    'input': inputs if inputs else "N/A",
+                    'expected': output if output else "N/A",
                     'result': result if result is not None else "N/A",
                     'passed': passed,
                     'error': error,
