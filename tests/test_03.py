@@ -1,10 +1,11 @@
 import pprint
+from pathlib import Path
 
 from checker import SberChecker
 
 
 sber_checker = SberChecker(
-    filename="../tasks/03.py",
+    filename=Path(__file__).parent.parent / 'tasks' / "03.py",
     tests=[
         {
             "input": [1],

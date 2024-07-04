@@ -1,4 +1,5 @@
 import pprint
+from pathlib import Path
 
 from checker import SberChecker
 
@@ -16,7 +17,7 @@ except:
 """
 
 sber_checker = SberChecker(
-    filename="../tasks/01.py",
+    filename=Path(__file__).parent.parent / 'tasks' / '01.py',
     tests=[
         {
             "input": [],

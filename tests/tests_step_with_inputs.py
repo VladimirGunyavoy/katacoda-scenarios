@@ -1,9 +1,10 @@
 import pprint
+from pathlib import Path
 
 from checker import SberChecker
 
 sber_checker = SberChecker(
-    filename="../tasks/step_with_inputs.py",
+    filename=Path(__file__).parent.parent / 'tasks' / "step_with_inputs.py",
     tests=[
         {
             "input": ['Jason', 'Michael', 'John'],

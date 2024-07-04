@@ -1,4 +1,5 @@
 import pprint
+from pathlib import Path
 
 from checker import SberChecker
 
@@ -10,7 +11,7 @@ tests = [
 
 ]
 sber_checker = SberChecker(
-    filename="../tasks/gleb_02.py",
+    filename=Path(__file__).parent.parent / 'tasks' / "02.py",
     tests=tests,
     call="get_tax"
 )

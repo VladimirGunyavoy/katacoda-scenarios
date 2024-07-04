@@ -5,6 +5,7 @@ from unittest.mock import patch
 
 
 class SberChecker:
+    """ Class for checking code"""
 
     def __init__(self, filename, tests, call=None, solution=None, should_include=None, postcode=None):
         self.filename: str = filename
@@ -17,7 +18,7 @@ class SberChecker:
     @staticmethod
     def __file_read(filename):
         try:
-            with open(filename) as f:
+            with open(filename, encoding='utf-8') as f:
                 return f.read()
         except FileNotFoundError:
             return {"error": f"File {filename} not found in current directory"}

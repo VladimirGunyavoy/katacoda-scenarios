@@ -1,4 +1,5 @@
 import pprint
+from pathlib import Path
 
 from checker import SberChecker
 
@@ -8,7 +9,7 @@ def solution(line):
 
 
 sber_checker = SberChecker(
-    filename="../tasks/07.py",
+    filename=Path(__file__).parent.parent / 'tasks' / "07.py",
     tests=[
         {
             "input": ["Варежка"],

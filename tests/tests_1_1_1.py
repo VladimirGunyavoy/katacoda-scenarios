@@ -1,12 +1,13 @@
 import pprint
 from datetime import datetime
+from pathlib import Path
 
 from checker import SberChecker
 
 year = datetime.now().year
 
 sber_checker = SberChecker(
-    filename="../tasks/lesson_1_part_1_problem_1.py",
+    filename=Path(__file__).parent.parent / 'tasks' / "lesson_1_part_1_problem_1.py",
     tests=[
         {
             "input": [],
