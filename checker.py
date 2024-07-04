@@ -1,0 +1,127 @@
+import sys
+from io import StringIO
+from typing import Callable
+from unittest.mock import patch
+
+
+class SberChecker:
+
+    def __init__(self, filename, tests, call=None, solution=None, should_include=None, postcode=None):
+        self.filename: str = filename
+        self.tests: list = tests
+        self.call: str = call
+        self.solution: Callable = solution
+        self.should_include: Callable = should_include
+        self.postcode: str = postcode
+
+    @staticmethod
+    def __file_read(filename):
+        try:
+            with open(filename) as f:
+                return f.read()
+        except FileNotFoundError:
+            return {"error": f"File {filename} not found in current directory"}
+
+    @staticmethod
+    def __execute_function(func: str | Callable, args, file_content):
+        if isinstance(func, str):
+            exec(file_content, globals())
+            function = globals().get(func)
+            if not function:
+                raise ValueError(f"Function with name '{func}' is not defined")
+        else:
+            function = func
+
+        if not args:
+            result = [function()]
+        else:
+            result = [function(*args)]
+        return result
+
+    def __check_with_function(self, test, file_content):
+        expected_output = test.get("output", [])
+        args = test.get("input", [])
+
+        try:
+            """ If output is empty, then we should try to execute solution function """
+            if not expected_output:
+                if self.solution:
+                    user_result = self.__execute_function(self.call, args, file_content)
+                    solution_result = self.__execute_function(self.solution, args, file_content)
+
+                    passed = user_result == solution_result
+                    return passed, user_result, None
+                else:
+                    raise ValueError("Solution function is not defined")
+
+            user_result = self.__execute_function(self.call, args, file_content)
+
+            passed = expected_output == user_result
+            return passed, user_result, None
+        except Exception as e:
+            return False, None, f"{type(e).__name__}: {str(e)}"
+
+    @staticmethod
+    def __check_without_function(test, file_content):
+        expected_output = test["output"]
+        input_values = test.get("input", [])
+
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        try:
+            with patch('builtins.input', side_effect=input_values):
+                exec(file_content)
+                result = captured_output.getvalue().strip().split('\n')
+                passed = expected_output == result
+                return passed, result, None
+        except Exception as e:
+            return False, None, f"{type(e).__name__}: {str(e)}"
+        finally:
+            sys.stdout = sys.__stdout__
+
+    def __check_post_code(self, test, file_content):
+        expected_output = test["output"]
+
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        try:
+            file_content = file_content + f'\n{self.postcode}'
+            exec(file_content)
+            result = captured_output.getvalue().strip().split('\n')
+            passed = expected_output == result
+            return passed, result, None
+        except Exception as e:
+            return False, None, f"{type(e).__name__}: {str(e)}"
+        finally:
+            sys.stdout = sys.__stdout__
+
+    def __check_include(self, file_content):
+        return self.should_include(file_content)
+
+    def run(self):
+        file_content = self.__file_read(self.filename)
+        if "error" in file_content:
+            return file_content
+        try:
+            results = {}
+            for index, test in enumerate(self.tests, start=1):
+                if f'def {self.call}' in file_content:
+                    passed, result, error = self.__check_with_function(test, file_content)
+                elif self.postcode:
+                    passed, result, error = self.__check_post_code(test, file_content)
+                else:
+                    passed, result, error = self.__check_without_function(test, file_content)
+
+                results[f'Test {index}'] = {
+                    'input': test["input"] if 'input' in test else "N/A",
+                    'expected': test["output"],
+                    'result': result if result is not None else "N/A",
+                    'passed': passed,
+                    'error': error,
+                    'should_include': self.__check_include(file_content) if self.should_include else "N/A",
+                }
+            return results
+        except Exception as e:
+            return {"error": f"{type(e).__name__}: {str(e)}"}
