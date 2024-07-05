@@ -9,7 +9,7 @@ import subprocess
 import datetime
 
 # для запуска скрипта из любого места, например из /usr/local/lib, чтобы не видел пользователь
-# sys.path.append("/root")
+sys.path.append("/root")
 
 # задушить вывод от пользовательского print в функции find_min
 # with contextlib.redirect_stdout(open(os.devnull, "w")):
