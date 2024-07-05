@@ -1,23 +1,24 @@
 import pprint
 from checker import SberChecker
 from pathlib import Path
-import numpy as np
+# import numpy as np
 import os
 import json
 
-os.chdir('framework_test/assets')
-print(os.getcwd())
+# os.chdir('framework_test/assets')
+#print(os.getcwd())
 
 filename = 'step0.py'
 
 N = 3
-my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
+# my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
 
 my_tests = []
-for i in range(len(my_inputs)):
-    my_tests.append({'input': list(map(str, my_inputs[i])), 'output':[str(sum(my_inputs[i]))]})
+# for i in range(len(my_inputs)):
+#    my_tests.append({'input': list(map(str, my_inputs[i])), 'output':[str(sum(my_inputs[i]))]})
 
-# print(my_tests)
+my_tests = [{'input': [3, 4], 'output':[str(7)]}, {'input': [3, 4], 'output':[str(7)]}]
+#print(my_tests)
 
 sber_checker = SberChecker(
     filename=filename,
