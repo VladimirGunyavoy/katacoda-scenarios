@@ -10,7 +10,7 @@ print(os.getcwd())
 
 filename = 'step0.py'
 
-N = 10
+N = 3
 my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
 
 my_tests = []
