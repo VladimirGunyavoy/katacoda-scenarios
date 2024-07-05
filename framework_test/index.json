@@ -32,12 +32,7 @@
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
 				{"file": "step0.py", "target": "/root"},
-				{"file": "step1.py", "target": "/root"},	
-				{"file": "step2.py", "target": "/root"},	
-				{"file": "test_cases1.py", "target": "/usr/local/lib/"},	
-				{"file": "test_cases2.py", "target": "/usr/local/lib/"},	
-				{"file": "test_cases3.py", "target": "/usr/local/lib/"},			
-				{"file": "test_cases4.py", "target": "/usr/local/lib/"}
+				{"file": "test_cases1.py", "target": "/usr/local/lib/"}
             ]
         },
         "finish": {

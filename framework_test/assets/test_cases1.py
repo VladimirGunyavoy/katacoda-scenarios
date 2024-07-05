@@ -26,6 +26,7 @@ sber_checker = SberChecker(
 res = sber_checker.run()
 
 json_res = json.dumps(res, indent=4)
+
 print()
 print(type(json_res))
 print()
