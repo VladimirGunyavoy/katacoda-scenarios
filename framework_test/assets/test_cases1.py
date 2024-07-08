@@ -8,7 +8,7 @@ import json
 # os.chdir('framework_test/assets')
 #print(os.getcwd())
 
-filename = 'step0.py'
+filename = 'framework_test/assets/step0.py'
 
 N = 3
 # my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
@@ -17,7 +17,7 @@ my_tests = []
 # for i in range(len(my_inputs)):
 #    my_tests.append({'input': list(map(str, my_inputs[i])), 'output':[str(sum(my_inputs[i]))]})
 
-my_tests = [{'input': [3, 4], 'output':[str(7)]}, {'input': [3, 4], 'output':[str(7)]}]
+my_tests = [{'input': ['3', '4'], 'output':[str(7)]}, {'input': ['4', '6'], 'output':[str(10)]}]
 #print(my_tests)
 
 sber_checker = SberChecker(
@@ -29,5 +29,6 @@ res = sber_checker.run()
 json_res = json.dumps(res, indent=4)
 
 print(json_res)
+
 
 
