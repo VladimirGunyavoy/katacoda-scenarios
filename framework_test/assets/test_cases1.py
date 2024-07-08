@@ -8,7 +8,7 @@ import json
 # os.chdir('framework_test/assets')
 #print(os.getcwd())
 
-filename = 'framework_test/assets/step0.py'
+filename = 'step0.py'
 
 N = 3
 # my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
