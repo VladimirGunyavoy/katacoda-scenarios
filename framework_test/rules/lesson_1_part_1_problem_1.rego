@@ -9,10 +9,7 @@ allow[msg] {
 deny[msg] {
 	test := input[key]
     not(test.passed)
-    msg := sprintf("*%s* не выполнен\n  
-    Ввод: %s\n  
-    Ожидания: %s\n  
-    Реальность: %s", [key,  test.input, test.expected[0], test.result[0]])
+    msg := sprintf("*%s* не выполнен \  Ввод: %s\n  Ожидания: %s\n  Реальность: %s", [key,  test.input, test.expected[0], test.result[0]])
 }
 
 error[msg] {
