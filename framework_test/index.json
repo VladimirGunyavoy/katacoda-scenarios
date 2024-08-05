@@ -40,6 +40,7 @@
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
 				{"file": "step0.py", "target": "/root"},
 				{"file": "test_sum.py", "target": "/usr/local/lib/"},
+				{"file": "tests_1.txt", "target": "/usr/local/lib/"},
                 {"file": "checker.py", "target":"/usr/local/lib/"}
             ]
         },
