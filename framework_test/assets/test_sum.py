@@ -1,7 +1,7 @@
 import pprint
 from checker import SberChecker
 from pathlib import Path
-import numpy as np
+# import numpy as np
 import json
 
 filename = 'step0.py'
