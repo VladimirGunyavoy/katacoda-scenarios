@@ -6,7 +6,7 @@ import json
 
 filename = 'step0.py'
 
-f = open('tests_1.txt')
+f = open('/root/tests_1.txt')
 my_tests = eval(f.read())
 
 sber_checker = SberChecker(
