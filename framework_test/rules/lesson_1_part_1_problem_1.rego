@@ -1,19 +1,74 @@
 package sbercode
 
+# https://play.openpolicyagent.org/p/HMCX1jMU0y
+
+fmt := concat("", [
+`## %s
+
+<details>
+
+### Входные данные
+
+`,
+"```", 
+`
+%s
+`,
+"```",
+
+`
+
+### Ожидаемый результат
+
+`,
+"```",
+`
+%s
+`,
+"```",
+
+`
+### Фактический результат
+
+`,
+"```",
+`
+%s
+`,
+"```",
+])
+
+
+errFmt := concat("", [
+`## %s
+
+<details>
+
+### Непредвиденая ошибка
+
+`,
+"```", 
+`
+%s
+`,
+"```",
+])
+
 allow[msg] {
-	test := input[key]
+    test := input[key]
     test.passed
-    msg := sprintf("*%s* выполнены условия теста\n ожидаемый результат: %s, \nфактический результат %s", [key, test.result[0], test.expected[0]])
+    msg := sprintf(fmt, [key, concat(",\n", test.input), concat(",\n", test.result), concat(",\n", test.expected)])
 }
 
 deny[msg] {
-	test := input[key]
+    test := input[key]
     not(test.passed)
-    msg := sprintf("*%s* не выполнен \  Ввод: %s\n  Ожидания: %s\n  Реальность: %s", [key,  test.input, test.expected[0], test.result[0]])
+    
+    msg := sprintf(fmt, [key, concat(",\n", test.input), concat(",\n", test.result), concat(",\n", test.expected)])
 }
 
 error[msg] {
 	test := input[key]
     test.error != null
-    msg := sprintf("*%s*\n синтаксическая ошибка:\n%s", [key, test.error])
+    msg := sprintf(errFmt, [key, test.error])
 }
