@@ -12,7 +12,7 @@ my_tests = []
 for i in range(len(my_inputs)):
     my_tests.append({'input': my_inputs[i], 'output':[str(sum(my_inputs[i]))]})
 
-print(my_tests)
+# print(my_tests)
 
 sber_checker = SberChecker(
     filename=filename,
