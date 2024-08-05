@@ -10,6 +10,8 @@ import json
 
 filename = 'step0.py'
 
+##### TEST COMMENT
+
 N = 3
 # my_inputs = np.random.randint(0, 10, size=(N, 2)).tolist()
 
