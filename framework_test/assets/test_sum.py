@@ -4,6 +4,7 @@ from pathlib import Path
 # import numpy as np
 import json
 
+
 filename = 'step0.py'
 
 f = open('/usr/local/lib/tests_1.txt')
@@ -14,7 +15,6 @@ sber_checker = SberChecker(
     tests=my_tests
 )
 res = sber_checker.run()
-# pprint.pprint(res)
 
 json_res = json.dumps(res, indent=4)
 
