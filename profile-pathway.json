@@ -1,0 +1,25 @@
+{
+    "scenarios": [
+        {
+            "title": "Prometheus Client Full",
+            "description": "Prometheus Client Full",
+            "id": "prometheus-client-full"
+        }
+		,
+        {
+            "title": "Python 1",
+            "description": "Первое задание по Python",
+            "id": "python1"
+        },
+        {
+            "title": "Python Demo",
+            "description": "Демонстрационное задание по ЭК Python Основы Python",
+            "id": "python-demo"
+        },
+        {
+            "title": "Python Demo2",
+            "description": "Демонстрация теории и не проверяемых заданий",
+            "id": "python-demo2"
+        }
+    ]
+  }
