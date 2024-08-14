@@ -3,12 +3,16 @@ import json
 from checker import SberChecker
 
 
-filename = 'step_2.py'
+filename = 'step_1.py'
 
 my_tests = [
     {
         'input': [],
-        'output':["до оператора if", "после оператора if"]
+        'output':["coin 0", "", "True"]
+    },
+    {
+        'input': [],
+        'output':["coin 1", "", "False"]
     },
 ]
 
