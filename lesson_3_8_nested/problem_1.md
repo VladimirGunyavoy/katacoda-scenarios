@@ -1,0 +1,3 @@
+Напишите дерево принятия решения по этой схеме. Вывод будет либо «Принять оффер», либо «Отклонить оффер».
+
+![дерево1](https://cooing-perigee-a39.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8515e6a5-3b7d-439d-aa63-edaec65c26ff%2F3aac6e18-dc2c-47c1-8c81-dc2f8b7b8e47%2F9.png?table=block&id=3414bd22-9745-4f60-a540-431704308093&spaceId=8515e6a5-3b7d-439d-aa63-edaec65c26ff&width=1810&userId=&cache=v2)

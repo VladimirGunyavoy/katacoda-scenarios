@@ -1,0 +1,3 @@
+Напишите дерево принятия решения на основе схемы. Вывод будет либо «Без скидки», либо «Cкидка 10%», либо «Cкидка 20%».
+
+![дерево](https://cooing-perigee-a39.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8515e6a5-3b7d-439d-aa63-edaec65c26ff%2F1aba2f58-d1b3-4924-966a-891b69da2a12%2F5.png?table=block&id=6333512b-69c4-45d6-83e4-bbaaf32a2af5&spaceId=8515e6a5-3b7d-439d-aa63-edaec65c26ff&width=2000&userId=&cache=v2)
