@@ -6,14 +6,19 @@ filename = 'step_2.py'
 
 my_tests = [
     {
-        'input': [],
+        'input': ["2"],
         'output': ["coin 0", "", "designer:", "arial", "", "you", "times new roman"]
     },
     {
-        'input': [],
+        'input': ["11"],
         'output': ["coin 1", "", "designer:", "times new roman", "", "you", "arial"]
     },
 ]
+
+precode = """
+import numpy as np
+np.random.seed(seed=int(input()))
+"""
 
 sber_checker = SberChecker(
     filename=filename,

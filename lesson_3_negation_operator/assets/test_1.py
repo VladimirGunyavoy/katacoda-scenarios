@@ -7,18 +7,24 @@ filename = 'step_1.py'
 
 my_tests = [
     {
-        'input': [],
-        'output':["coin 0", "", "True"]
+        'input': ["2"],
+        'output':["coin 0", "True"]
     },
     {
-        'input': [],
-        'output':["coin 1", "", "False"]
+        'input': ["11"],
+        'output':["coin 1", "False"]
     },
 ]
 
+precode = """
+import numpy as np
+np.random.seed(seed=int(input()))
+"""
+
 sber_checker = SberChecker(
     filename=filename,
-    tests=my_tests
+    tests=my_tests,
+    precode=precode
 )
 res = sber_checker.run()
 

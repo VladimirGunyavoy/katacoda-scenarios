@@ -7,12 +7,13 @@ from unittest.mock import patch
 class SberChecker:
     """ Class for checking code"""
 
-    def __init__(self, filename, tests, call=None, solution=None, should_include=None, postcode=None):
+    def __init__(self, filename, tests, call=None, solution=None, should_include=None, precode=None, postcode=None):
         self.filename: str = filename
         self.tests: list = tests
         self.call: str = call
         self.solution: Callable = solution
         self.should_include: Callable = should_include
+        self.precode: str = precode
         self.postcode: str = postcode
 
     @staticmethod
@@ -33,7 +34,7 @@ class SberChecker:
             raise ValueError("'input(args)' and/or 'output(return)' are not defined")
 
     @staticmethod
-    def __execute_function(func, args, file_content):
+    def __execute_function(func: str | Callable, args, file_content):
         if isinstance(func, str):
             exec(file_content, globals())
             function = globals().get(func)
@@ -114,12 +115,17 @@ class SberChecker:
         try:
             results = {}
             for index, test in enumerate(self.tests, start=1):
-                if f'def {self.call}' in file_content:
-                    passed, result, error = self.__check_with_function(test, file_content)
-                elif self.postcode:
-                    passed, result, error = self.__check_post_code(test, file_content)
+                if self.precode:
+                    code = f'{self.precode}\n\n' + file_content
                 else:
-                    passed, result, error = self.__check_without_function(test, file_content)
+                    code = file_content
+
+                if f'def {self.call}' in code:
+                    passed, result, error = self.__check_with_function(test, code)
+                elif self.postcode:
+                    passed, result, error = self.__check_post_code(test, code)
+                else:
+                    passed, result, error = self.__check_without_function(test, code)
 
                 inputs, output = self.__check_inputs_outputs(test)
 

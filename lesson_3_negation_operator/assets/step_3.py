@@ -7,7 +7,7 @@ coin = np.random.randint(0, 2)
 print('coin', coin)
 print()
 
-if ...:  # ваш код
+if   # ваш код
     print('Барт берет молчаливого Вову')
     print('Локи берет Женю')
 else:

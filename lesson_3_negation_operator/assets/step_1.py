@@ -4,6 +4,5 @@
 import numpy as np
 coin = np.random.randint(0, 2)
 print('coin', coin)
-print()
 
 # ваш код
