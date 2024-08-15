@@ -1,6 +1,6 @@
 import sys
 from io import StringIO
-from typing import Callable
+from typing import Callable, Union
 from unittest.mock import patch
 
 
@@ -34,7 +34,7 @@ class SberChecker:
             raise ValueError("'input(args)' and/or 'output(return)' are not defined")
 
     @staticmethod
-    def __execute_function(func: str | Callable, args, file_content):
+    def __execute_function(func: Union[str, Callable], args, file_content):
         if isinstance(func, str):
             exec(file_content, globals())
             function = globals().get(func)

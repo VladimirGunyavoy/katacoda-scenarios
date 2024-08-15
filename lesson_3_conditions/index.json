@@ -39,52 +39,16 @@
         },
         "assets": {
             "host01": [
-                {
-                    "file": "send.sh",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "courseBase.sh",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "verify.sh",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "verify.py",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "validate.sh",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "load.sh",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "step_1.py",
-                    "target": "/root"
-                },
-                {
-                    "file": "step_2.py",
-                    "target": "/root"
-                },
-                {
-                    "file": "step_3.py",
-                    "target": "/root"
-                },
-                {
-                    "file": "test_1.py",
-                    "target": "/usr/local/lib/"
-                },
+                {"file": "send.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "verify.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "verify.py", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "step_1.py", "target": "/root"},
+                {"file": "step_2.py","target": "/root"},
+                {"file": "step_3.py", "target": "/root"},
+                {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {
                     "file": "test_2.py",
                     "target": "/usr/local/lib/"
@@ -105,17 +69,12 @@
     },
     "environment": {
         "showdashboard": true,
-        "dashboards": [
-            {
-                "name": "Prometheus",
-                "port": 9090
-            }
-        ],
+        "dashboards": [{"name": "Prometheus", "port": 9090}],
         "uilayout": "editor-terminal",
         "uisettings": "py",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "python"
+      "imageid": "python"
     }
 }
