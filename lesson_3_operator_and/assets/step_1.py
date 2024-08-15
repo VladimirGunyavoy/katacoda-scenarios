@@ -9,7 +9,3 @@ print('coin 2:', coin2)
 print()
 
 # ваш код
-if coin1 and coin2:
-    print('True')
-else:
-    print('False')
