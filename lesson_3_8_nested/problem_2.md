@@ -1,3 +1,3 @@
 Сократите дерево до проверки одного условия с использованием логических операций. Вывод будет либо «Принять оффер», либо «Отклонить оффер».
 
-![дерево](https://cooing-perigee-a39.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8515e6a5-3b7d-439d-aa63-edaec65c26ff%2F20429e01-ca94-4083-bf0f-23105028366e%2F9.png?table=block&id=630e4de4-660f-44ec-9fed-7b977df1e89f&spaceId=8515e6a5-3b7d-439d-aa63-edaec65c26ff&width=2000&userId=&cache=v2)
+![дерево](./step_1_2.png)
