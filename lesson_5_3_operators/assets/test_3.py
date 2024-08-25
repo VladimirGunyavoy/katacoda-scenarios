@@ -1,0 +1,38 @@
+import os
+import json
+import re
+
+from checker import SberChecker
+
+index = re.search(r'\d+', os.path.basename(__file__)).group()
+
+filename = f'step_{index}.py'
+
+my_tests = [
+    {
+        'input': ["print(3 + 4 - 5 * 2)"],
+        'output': ["pass"]
+    },
+    {
+        'input': ["print(4 - 5 * 2)"],
+        'output': ["+ not included"]
+    },
+    {
+        'input': ["print(5 * 2)"],
+        'output': ["+ not included", "- not included"]
+    },
+    {
+        'input': ["print(2)"],
+        'output': ["+ not included", "- not included", "* not included"]
+    },
+]
+
+sber_checker = SberChecker(
+    filename=filename,
+    tests=my_tests,
+)
+res = sber_checker.run()
+
+json_res = json.dumps(res, indent=4, ensure_ascii=False)
+
+print(json_res)
