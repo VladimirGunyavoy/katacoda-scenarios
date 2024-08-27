@@ -88,6 +88,23 @@ class SberChecker:
         finally:
             sys.stdout = sys.__stdout__
 
+    def __check_post_code(self, test, file_content):
+        _, expected_output = self.__check_inputs_outputs(test)
+
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        try:
+            file_content = file_content + f'\n{self.postcode}'
+            exec(file_content)
+            result = captured_output.getvalue().strip().split('\n')
+            passed = expected_output == result
+            return passed, result, None
+        except Exception as e:
+            return False, None, f"{type(e).__name__}: {str(e)}"
+        finally:
+            sys.stdout = sys.__stdout__
+
     def __check_include(self, file_content):
         return self.should_include(file_content)
 
@@ -103,11 +120,10 @@ class SberChecker:
                 else:
                     code = file_content
 
-                if self.postcode:
-                    code = code + f'\n\n{self.postcode}'
-
                 if f'def {self.call}' in code:
                     passed, result, error = self.__check_with_function(test, code)
+                elif self.postcode:
+                    passed, result, error = self.__check_post_code(test, code)
                 else:
                     passed, result, error = self.__check_without_function(test, code)
 
