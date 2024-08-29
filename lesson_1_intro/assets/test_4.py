@@ -18,6 +18,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'sep' in code,    
 )
 res = sber_checker.run()
 
