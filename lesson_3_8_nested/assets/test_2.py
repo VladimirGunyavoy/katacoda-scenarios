@@ -66,6 +66,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=should_include,
+    should_include_message="Ваш код не должен содержать `elif`",
 )
 res = sber_checker.run()
 

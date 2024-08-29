@@ -23,7 +23,8 @@ def should_include(code):
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=should_include
+    should_include=should_include,
+    should_include_message="Ваш код должен содержать: 'NPS: 42' и 'results[0]'",
 )
 res = sber_checker.run()
 

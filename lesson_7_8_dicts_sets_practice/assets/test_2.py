@@ -24,6 +24,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=should_include,
+    should_include_message="Ваш код должен содержать `employee['grade']` и `employee['hours']`",
 )
 res = sber_checker.run()
 

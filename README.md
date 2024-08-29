@@ -149,6 +149,7 @@ checker = SberChecker(
         },
     ],
     should_include=should_include,
+    should_include_message="Ваш код должен содержать `for`",
 )
 
 result = checker.run()

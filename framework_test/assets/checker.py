@@ -1,18 +1,29 @@
 import sys
 from io import StringIO
-from typing import Callable
+from typing import Callable, Union
 from unittest.mock import patch
 
 
 class SberChecker:
     """ Class for checking code"""
 
-    def __init__(self, filename, tests, call=None, solution=None, should_include=None, precode=None, postcode=None):
+    def __init__(
+        self,
+        filename,
+        tests,
+        call=None,
+        solution=None,
+        should_include=None,
+        should_include_message=None,
+        precode=None,
+        postcode=None
+    ):
         self.filename: str = filename
         self.tests: list = tests
         self.call: str = call
         self.solution: Callable = solution
         self.should_include: Callable = should_include
+        self.message: str = should_include_message
         self.precode: str = precode
         self.postcode: str = postcode
 
@@ -34,7 +45,7 @@ class SberChecker:
             raise ValueError("'input(args)' and/or 'output(return)' are not defined")
 
     @staticmethod
-    def __execute_function(func: str | Callable, args, file_content):
+    def __execute_function(func: Union[str, Callable], args, file_content):
         if isinstance(func, str):
             exec(file_content, globals())
             function = globals().get(func)
@@ -88,23 +99,6 @@ class SberChecker:
         finally:
             sys.stdout = sys.__stdout__
 
-    def __check_post_code(self, test, file_content):
-        _, expected_output = self.__check_inputs_outputs(test)
-
-        captured_output = StringIO()
-        sys.stdout = captured_output
-
-        try:
-            file_content = file_content + f'\n{self.postcode}'
-            exec(file_content)
-            result = captured_output.getvalue().strip().split('\n')
-            passed = expected_output == result
-            return passed, result, None
-        except Exception as e:
-            return False, None, f"{type(e).__name__}: {str(e)}"
-        finally:
-            sys.stdout = sys.__stdout__
-
     def __check_include(self, file_content):
         return self.should_include(file_content)
 
@@ -120,14 +114,23 @@ class SberChecker:
                 else:
                     code = file_content
 
+                if self.postcode:
+                    code = code + f'\n\n{self.postcode}'
+
                 if f'def {self.call}' in code:
                     passed, result, error = self.__check_with_function(test, code)
-                elif self.postcode:
-                    passed, result, error = self.__check_post_code(test, code)
                 else:
                     passed, result, error = self.__check_without_function(test, code)
 
                 inputs, output = self.__check_inputs_outputs(test)
+
+                if self.should_include:
+                    if not self.message:
+                        return {"error": f"You must specify 'should_include_message' parameter"}
+
+                    should_include_result = self.__check_include(file_content)
+                else:
+                    should_include_result = "N/A"
 
                 results[f'Test {index}'] = {
                     'input': inputs if inputs else "N/A",
@@ -135,8 +138,11 @@ class SberChecker:
                     'result': result if result is not None else "N/A",
                     'passed': passed,
                     'error': error,
-                    'should_include': self.__check_include(file_content) if self.should_include else "N/A",
+                    'should_include': should_include_result,
                 }
+                if not should_include_result:
+                    results[f'Test {index}']['message'] = self.message
+
             return results
         except Exception as e:
             return {"error": f"{type(e).__name__}: {str(e)}"}
