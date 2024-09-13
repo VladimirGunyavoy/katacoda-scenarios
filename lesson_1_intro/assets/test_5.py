@@ -18,7 +18,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: 'end' in code,    
+    should_include=lambda code: 'end=\', \'' in code,    
     should_include_message='Не обнаружено использования параметра end в print'
 )
 res = sber_checker.run()
