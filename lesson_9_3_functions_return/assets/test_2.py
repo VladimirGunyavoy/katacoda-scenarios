@@ -10,8 +10,16 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "args": [100, 10],
-        "return": "???"
+        "args": [250, 5],
+        "return": 2.0
+    },
+    {
+        "args": [1000, 21],
+        "return": 2.1
+    },
+    {
+        "args": [1234, 22],
+        "return": 1.78
     },
 ]
 

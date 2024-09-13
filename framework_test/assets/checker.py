@@ -130,12 +130,12 @@ class SberChecker:
 
                     should_include_result = self.__check_include(file_content)
                 else:
-                    should_include_result = "N/A"
+                    should_include_result = ""
 
                 results[f'Test {index}'] = {
-                    'input': inputs if inputs else "N/A",
-                    'expected': output if output else "N/A",
-                    'result': result if result is not None else "N/A",
+                    'input': inputs if inputs else [],
+                    'expected': output if output else [],
+                    'result': result if result is not None else "",
                     'passed': passed,
                     'error': error,
                     'should_include': should_include_result,
