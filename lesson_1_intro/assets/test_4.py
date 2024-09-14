@@ -19,7 +19,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'sep' in code,    
-    should_include_message='Не обнаружено использования параметра sep'
+    should_include_message='Не обнаружено использования параметра sep в print'
 )
 res = sber_checker.run()
 
