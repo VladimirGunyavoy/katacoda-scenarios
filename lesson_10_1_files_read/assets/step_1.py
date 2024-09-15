@@ -1,0 +1,4 @@
+filename = input()
+
+# ваш код
+...
