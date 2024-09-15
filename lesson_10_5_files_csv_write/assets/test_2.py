@@ -12,15 +12,38 @@ my_tests = [
     {
         "input": [],
         "output": [
-            "Вы попытались отправить сообщение, но по нашим данным вы находитесь в отпуске, и мы не разрешаем вам работать. Отдохните хорошенько и возвращайтесь к нам не раньше конца вашего отпуска."
-        ],
+            "отдел,бонус",
+            "Продажи,14500",
+            "Маркетинг,9700",
+            "IT,20200",
+            "Операции,4500"
+        ]
     },
 ]
+
+precode = """\n
+...
+with open('employee_bonuses.csv', 'r', encoding='utf-8') as f:
+    saved_employee_bonuses = f.read()
+    
+"""
+postcode = """\n
+...
+with open('department_bonuses.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+with open('department_bonuses.csv', 'w', encoding='utf-8') as f:
+    f.write('')
+
+with open('employee_bonuses.csv', 'w', encoding='utf-8') as f:
+    f.write(saved_employee_bonuses)
+"""
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="holiday_block()"
+    precode=precode,
+    postcode=postcode
 )
 res = sber_checker.run()
 

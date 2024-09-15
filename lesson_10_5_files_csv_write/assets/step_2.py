@@ -1,10 +1,10 @@
 import csv
 
-csv_path = input()
+# Имена файлов
+input_file = 'employee_bonuses.csv'
+output_file = 'department_bonuses.csv'
 
-file = open(csv_path, mode='r', encoding='utf-8')
-reader = csv.DictReader(file)
-file.close()
-
-# ваш код
+# Ваш код
 ...
+
+# Распечатывать результат не нужно, файл проверяется автоматически

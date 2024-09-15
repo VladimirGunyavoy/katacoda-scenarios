@@ -40,6 +40,9 @@
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "step_1.py", "target": "/root"},
                 {"file": "step_2.py","target": "/root"},
+                {"file": "mediareport.csv","target": "/root"},
+                {"file": "employee_bonuses.csv","target": "/root"},
+                {"file": "department_bonuses.csv","target": "/root"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
                 {"file": "checker.py", "target": "/usr/local/lib/"}
