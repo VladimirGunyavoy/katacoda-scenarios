@@ -1,4 +1,4 @@
-filename=input()
+filename = input()
 
-print(f"")
-print(f"")
+# ваш код
+...

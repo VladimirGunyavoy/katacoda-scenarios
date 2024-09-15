@@ -10,19 +10,24 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "args": [[200, 300, 500], [100, 100]],
-        "return": 800
+        "input": [f"step_3_feedback1.txt"],
+        "output": [
+            "Средняя: 3.0",
+            "Доля 5: 25%"
+        ]
     },
     {
-        "args": [[1000, 500, 300], [2000, 800]],
-        "return": -1000
+        "input": [f"step_3_feedback2.txt"],
+        "output": [
+            "Средняя: 3.4",
+            "Доля 5: 20%"
+        ]
     },
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    call='calculate_budget'
 )
 res = sber_checker.run()
 

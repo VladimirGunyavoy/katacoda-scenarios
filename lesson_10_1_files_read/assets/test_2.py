@@ -10,23 +10,30 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "args": [250, 5],
-        "return": 2.0
+        "input": ["step_2_data1.txt"],
+        "output": [
+            "Иванов Иван Разработчик",
+            "Сидоров Сергей Администратор",
+            "Смирнова Анна Аналитик",
+            "270 мин"
+        ]
     },
     {
-        "args": [1000, 21],
-        "return": 2.1
+        "input": ["step_2_data2.txt"],
+        "output": [
+            "Петров Петр Тестировщик",
+            "Кузнецов Алексей Менеджер проекта",
+            "Васильева Мария Дизайнер",
+            "Медведев Арсений Разработчик",
+            "258 мин"
+        ]
     },
-    {
-        "args": [1234, 22],
-        "return": 1.78
-    },
+
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    call="get_sales_conversion",
 )
 res = sber_checker.run()
 
