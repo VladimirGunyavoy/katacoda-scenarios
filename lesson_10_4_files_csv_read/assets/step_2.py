@@ -1,10 +1,12 @@
 import csv
 
-csv_path = input()
+file = open('marketing_campaigns.csv', mode='r', encoding='utf-8')
 
-file = open(csv_path, mode='r', encoding='utf-8')
 reader = csv.DictReader(file)
-file.close()
 
 # ваш код
 ...
+
+
+# Закрываем файл
+file.close()

@@ -8,11 +8,27 @@ index = re.search(r'\d+', os.path.basename(__file__)).group()
 
 filename = f'step_{index}.py'
 
+precode = """\n
+...
+with open("teambuilding_offers.csv", 'r', encoding='utf-8') as f:
+    saved_data = f.read()
+    
+"""
+
+postcode = """
+...
+with open("teambuilding_offers.csv", 'w', encoding='utf-8') as f:
+    f.write(saved_data)
+"""
 my_tests = [
     {
         "input": [],
         "output": [
-            "Прежде чем Вы примете решение об участии в этом исследовании, мы бы хотели предоставить Вам информацию об этом исследовании и возможных рисках."
+            "EventCo",
+            "Dynamic Events",
+            "Unlimited Adventures",
+            "Synergy Getaways",
+            "Peak Performance",
         ]
     },
 ]
@@ -20,7 +36,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="research_introduction()"
+    precode=precode,
+    postcode=postcode
 )
 res = sber_checker.run()
 
