@@ -12,15 +12,36 @@ my_tests = [
     {
         "input": [],
         "output": [
-            "Вы попытались отправить сообщение, но по нашим данным вы находитесь в отпуске, и мы не разрешаем вам работать. Отдохните хорошенько и возвращайтесь к нам не раньше конца вашего отпуска."
-        ],
+            "Веретенников",
+            "Златоручев",
+            "Радостехин",
+            "",
+            "Листопадов",
+            "Гроздокарпов",
+            "Кристалвовский"
+        ]
     },
 ]
+
+postcode = """\n
+...
+with open('team_1.txt', 'r') as file:
+    print(file.read())
+    
+with open('team_2.txt', 'r') as file:
+    print(file.read())
+
+with open('team_1.txt', 'w') as file:
+    file.write("")
+
+with open('team_2.txt', 'w') as file:
+    file.write("")
+"""
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="holiday_block()"
+    postcode=postcode
 )
 res = sber_checker.run()
 

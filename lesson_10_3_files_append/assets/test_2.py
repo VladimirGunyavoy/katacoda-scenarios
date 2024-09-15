@@ -10,17 +10,40 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "input": [],
-        "output": [
-            "Вы попытались отправить сообщение, но по нашим данным вы находитесь в отпуске, и мы не разрешаем вам работать. Отдохните хорошенько и возвращайтесь к нам не раньше конца вашего отпуска."
+        "input": [
+            "Дмитрий",
+            "Екатерина",
+            "Не выключает свет в переговорной после использования"
         ],
+        "output": [
+            "sender, employee, reason",
+            "Оксана, Василий, Ворует у меня конфеты из ящика стола",
+            "Дмитрий, Екатерина, Не выключает свет в переговорной после использования"
+        ]
     },
 ]
+
+precode = """\n
+...
+with open('complaints.txt', 'r', encoding='utf-8') as f:
+    saved_complaints = f.read()
+
+"""
+
+postcode = """\n
+...
+with open('complaints.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+with open('complaints.txt', 'w', encoding='utf-8') as f:
+    f.write(saved_complaints)
+"""
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="holiday_block()"
+    precode=precode,
+    postcode=postcode
 )
 res = sber_checker.run()
 

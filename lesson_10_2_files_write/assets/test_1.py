@@ -12,15 +12,27 @@ my_tests = [
     {
         "input": [],
         "output": [
-            "Прежде чем Вы примете решение об участии в этом исследовании, мы бы хотели предоставить Вам информацию об этом исследовании и возможных рисках."
+            "min:100",
+            "max:300",
+            "sum:800",
+            "avg:200"
         ]
     },
 ]
 
+postcode = """\n
+...
+with open('expenses.txt', 'r') as file:
+    print(file.read())
+    
+with open('expenses.txt', 'w') as file:
+    file.write("")
+"""
+
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="research_introduction()"
+    postcode=postcode
 )
 res = sber_checker.run()
 
