@@ -8,27 +8,20 @@ index = re.search(r'\d+', os.path.basename(__file__)).group()
 
 filename = f'step_{index}.py'
 
-expenses = [
-    {"category": "Зарплата", "value": 987000},
-    {"category": "Аренда", "value": 160000},
-    {"category": "Продвижение", "value": 350000},
-]
-
 my_tests = [
     {
-        "args": [expenses],
-        "return": [
-            {'category': 'Зарплата', 'value': 0.66},
-            {'category': 'Аренда', 'value': 0.11},
-            {'category': 'Продвижение', 'value': 0.23}
-        ]
+        "input": ["june"],
+        "output": ["8.0%"]
+    },
+    {
+        "input": ["may"],
+        "output": ["30.2%"]
     },
 ]
 
 sber_checker = SberChecker(
     filename=filename,
-    tests=my_tests,
-    call="get_expenses_stats",
+    tests=my_tests
 )
 res = sber_checker.run()
 

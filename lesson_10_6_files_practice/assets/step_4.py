@@ -1,10 +1,8 @@
-import csv
-
-csv_purchases_path = input()
-
-file = open(csv_purchases_path, mode='r', encoding='utf-8')
-reader = csv.DictReader(file)
-file.close()
+input_filename = 'purchases.csv'
+output_filename = 'average.csv'
 
 # ваш код
 ...
+
+
+# Выводить результаты не нужно, проверяется автоматически

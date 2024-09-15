@@ -1,10 +1,12 @@
-import csv
+target_month = input().lower()
 
-csv_path = input()
 
-file = open(csv_path, mode='r', encoding='utf-8')
-reader = csv.DictReader(file)
-file.close()
+def solution(month):
+    import csv
 
-# ваш код
-...
+    # ваш код
+    ...
+
+
+# Вызываем функцию solution и выводим результат
+print(solution(target_month))

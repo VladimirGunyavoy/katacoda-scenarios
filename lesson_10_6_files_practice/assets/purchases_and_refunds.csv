@@ -1,0 +1,9 @@
+month,product,amount,status
+june,Подписка на 3 месяца,3000,payment
+june,Подписка на 1 месяц,1300,payment
+june,Максимальная подписка на 12 месяцев,9000,payment
+june,Подписка на 1 месяц,1300,refund
+june,Подписка на 3 месяца,3000,payment
+may,Подписка на 3 месяца,3000,payment
+may,Подписка на 1 месяца,1300,payment
+may,Подписка на 1 месяц,1300,refund

@@ -8,33 +8,45 @@ index = re.search(r'\d+', os.path.basename(__file__)).group()
 
 filename = f'step_{index}.py'
 
-expenses_1 = [
-    {"category": "Зарплата", "plan": 987000, "fact": 960000},
-    {"category": "Аренда", "plan": 160000, "fact": 190000},
-]
+precode = """\n
+...
+with open('purchases.csv', mode='r', encoding='utf-8') as file:
+    saved_purchases = file.read()
+    
+"""
 
-expenses_2 = [
-    {"category": "Зарплата", "plan": 150000, "fact": 140000},
-    {"category": "Аренда", "plan": 12000, "fact": 13000},
-]
+postcode = """
+import csv
 
+with open('average.csv', mode='r', encoding='utf-8') as file:
+    print(file.read())
+    
+with open('average.csv', mode='w', encoding='utf-8') as file:
+    file.write('')  
+
+with open('purchases.csv', mode='w', encoding='utf-8') as file:
+    file.write(saved_purchases)
+"""
 
 my_tests = [
     {
-        "args": [expenses_1],
-        "return": -3000
+        "input": [],
+        "output": [
+            "month,average",
+            "june,3520",
+            "august,4020",
+            "october,4020",
+            "september,4360",
+            "july,4860"
+        ]
     },
-    {
-        "args": [expenses_2],
-        "return": 9000
-    },
-
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    call="get_balance",
+    precode=precode,
+    postcode=postcode
 )
 res = sber_checker.run()
 
