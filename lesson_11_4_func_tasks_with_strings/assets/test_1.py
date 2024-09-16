@@ -10,27 +10,19 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "input": ["Михаил"],
-        "output": ["М...л"]
+        "args": ["Солнечный #привет"],
+        "return": "Солнечный [#привет]"
+    },
+    {
+        "args": ["Лучшие #озера #горы"],
+        "return": "Лучшие [#озера] [#горы]"
     },
 ]
-
-
-def should_include(code):
-    if "hideName" in code:
-        return False
-
-    if "(s)" in code:
-        return False
-
-    return True
-
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=should_include,
-    should_include_message="Не изменено название функции либо аргумент!",
+    call='convert_hashtags_to_links',
 )
 res = sber_checker.run()
 

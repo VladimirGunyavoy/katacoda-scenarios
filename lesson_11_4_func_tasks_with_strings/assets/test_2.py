@@ -10,27 +10,19 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "input": ["Михаил"],
-        "output": ["М...л"]
+        "args": [["sasha@microminds.ru", "eva@retarded.ru", "veronica@dolt.io", "ivan@retarded.ru"]],
+        "return": {
+            'microminds': ['sasha@microminds.ru'],
+            'retarded': ['eva@retarded.ru', 'ivan@retarded.ru'],
+            'dolt': ['veronica@dolt.io']
+        }
     },
 ]
-
-
-def should_include(code):
-    if "hideName" in code:
-        return False
-
-    if "(s)" in code:
-        return False
-
-    return True
-
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=should_include,
-    should_include_message="Не изменено название функции либо аргумент!",
+    call='organize_emails',
 )
 res = sber_checker.run()
 
