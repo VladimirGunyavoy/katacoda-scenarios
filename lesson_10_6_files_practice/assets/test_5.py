@@ -9,8 +9,7 @@ index = re.search(r'\d+', os.path.basename(__file__)).group()
 filename = f'step_{index}.py'
 
 precode = """\n
-import csv
-
+...
 with open('employees.csv', mode='r', encoding='utf-8') as file:
     saved_employees = file.read()
     

@@ -90,7 +90,7 @@ class SberChecker:
 
         try:
             with patch('builtins.input', side_effect=input_values):
-                exec(file_content)
+                exec(file_content, globals())
                 result = captured_output.getvalue().strip().split('\n')
                 passed = expected_output == result
                 return passed, result, None

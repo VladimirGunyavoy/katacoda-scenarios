@@ -16,8 +16,7 @@ with open('purchases.csv', mode='r', encoding='utf-8') as file:
 """
 
 postcode = """
-import csv
-
+...
 with open('average.csv', mode='r', encoding='utf-8') as file:
     print(file.read())
     
