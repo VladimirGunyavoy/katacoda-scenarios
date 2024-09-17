@@ -42,6 +42,7 @@
                 {"file": "step_2.py","target": "/root"},
                 {"file": "customers_old.txt","target": "/root"},
                 {"file": "customers_recent.txt","target": "/root"},
+                {"file": "customer_feedback.csv","target": "/root"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
                 {"file": "checker.py", "target": "/usr/local/lib/"}
