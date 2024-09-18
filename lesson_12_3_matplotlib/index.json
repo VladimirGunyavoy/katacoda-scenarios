@@ -1,6 +1,6 @@
 {
     "pathwayTitle": "Python 3",
-    "title": "Занятие 12. Numpy",
+    "title": "Занятие 12. Matplotlib",
     "description": "проверка",
     "difficulty": "beginner",
     "time": "30 minutes",
@@ -35,6 +35,90 @@
                 "openFile": "/root/step_4.py"
             },
             {
+                "title": "Задание 5",
+                "text": "problem_5.md",
+                "checkPolicyName": "problem_5",
+                "cmd": "python3 step_5.py",
+                "openFile": "/root/step_5.py"
+            },
+            {
+                "title": "Задание 6",
+                "text": "problem_6.md",
+                "checkPolicyName": "problem_6",
+                "cmd": "python3 step_6.py",
+                "openFile": "/root/step_6.py"
+            },
+            {
+                "title": "Задание 7",
+                "text": "problem_7.md",
+                "checkPolicyName": "problem_7",
+                "cmd": "python3 step_7.py",
+                "openFile": "/root/step_7.py"
+            },
+            {
+                "title": "Задание 8",
+                "text": "problem_8.md",
+                "checkPolicyName": "problem_8",
+                "cmd": "python3 step_8.py",
+                "openFile": "/root/step_8.py"
+            },
+            {
+                "title": "Задание 9",
+                "text": "problem_9.md",
+                "checkPolicyName": "problem_9",
+                "cmd": "python3 step_9.py",
+                "openFile": "/root/step_9.py"
+            },
+            {
+                "title": "Задание 10",
+                "text": "problem_10.md",
+                "checkPolicyName": "problem_10",
+                "cmd": "python3 step_10.py",
+                "openFile": "/root/step_10.py"
+            },
+            {
+                "title": "Задание 11",
+                "text": "problem_11.md",
+                "checkPolicyName": "problem_11",
+                "cmd": "python3 step_11.py",
+                "openFile": "/root/step_11.py"
+            },
+            {
+                "title": "Задание 12",
+                "text": "problem_12.md",
+                "checkPolicyName": "problem_12",
+                "cmd": "python3 step_12.py",
+                "openFile": "/root/step_12.py"
+            },
+            {
+                "title": "Задание 13",
+                "text": "problem_13.md",
+                "checkPolicyName": "problem_13",
+                "cmd": "python3 step_13.py",
+                "openFile": "/root/step_13.py"
+            },
+            {
+                "title": "Задание 14",
+                "text": "problem_14.md",
+                "checkPolicyName": "problem_14",
+                "cmd": "python3 step_14.py",
+                "openFile": "/root/step_14.py"
+            },
+            {
+                "title": "Задание 15",
+                "text": "problem_15.md",
+                "checkPolicyName": "problem_15",
+                "cmd": "python3 step_15.py",
+                "openFile": "/root/step_15.py"
+            },
+            {
+                "title": "Задание 16",
+                "text": "problem_16.md",
+                "checkPolicyName": "problem_16",
+                "cmd": "python3 step_16.py",
+                "openFile": "/root/step_16.py"
+            },
+            {
                 "title": "Успех",
                 "text": "outro.md"
             }
@@ -56,13 +140,34 @@
                 {"file": "step_2.py", "target": "/root"},
                 {"file": "step_3.py", "target": "/root"},
                 {"file": "step_4.py", "target": "/root"},
-                {"file": "data.csv","target": "/root"},
-                {"file": "data1.csv","target": "/root"},
-                {"file": "report.txt","target": "/root"},
+                {"file": "step_5.py", "target": "/root"},
+                {"file": "step_6.py", "target": "/root"},
+                {"file": "step_7.py", "target": "/root"},
+                {"file": "step_8.py", "target": "/root"},
+                {"file": "step_9.py", "target": "/root"},
+                {"file": "step_10.py", "target": "/root"},
+                {"file": "step_11.py", "target": "/root"},
+                {"file": "step_12.py", "target": "/root"},
+                {"file": "step_13.py", "target": "/root"},
+                {"file": "step_14.py", "target": "/root"},
+                {"file": "step_15.py", "target": "/root"},
+                {"file": "step_16.py", "target": "/root"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
                 {"file": "test_3.py", "target": "/usr/local/lib/"},
                 {"file": "test_4.py", "target": "/usr/local/lib/"},
+                {"file": "test_5.py", "target": "/usr/local/lib/"},
+                {"file": "test_6.py", "target": "/usr/local/lib/"},
+                {"file": "test_7.py", "target": "/usr/local/lib/"},
+                {"file": "test_8.py", "target": "/usr/local/lib/"},
+                {"file": "test_9.py", "target": "/usr/local/lib/"},
+                {"file": "test_10.py", "target": "/usr/local/lib/"},
+                {"file": "test_11.py", "target": "/usr/local/lib/"},
+                {"file": "test_12.py", "target": "/usr/local/lib/"},
+                {"file": "test_13.py", "target": "/usr/local/lib/"},
+                {"file": "test_14.py", "target": "/usr/local/lib/"},
+                {"file": "test_15.py", "target": "/usr/local/lib/"},
+                {"file": "test_16.py", "target": "/usr/local/lib/"},
                 {"file": "checker.py", "target": "/usr/local/lib/"}
             ]
         },

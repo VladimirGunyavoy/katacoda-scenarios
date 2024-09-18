@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 /usr/local/lib/test_8.py
+python3 /usr/local/lib/test_9.py
