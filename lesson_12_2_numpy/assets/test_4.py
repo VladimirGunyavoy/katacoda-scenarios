@@ -6,7 +6,7 @@ from checker import SberChecker
 
 index = re.search(r'\d+', os.path.basename(__file__)).group()
 
-filename = f'filename.py'
+filename = f'step_4.py'
 
 my_tests = [
     {
