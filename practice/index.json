@@ -10,8 +10,8 @@
                 "title": "Песочница",
                 "text": "problem_1.md",
                 "checkPolicyName": "problem_1",
-                "cmd": "python3 step_1.py",
-                "openFile": "/root/step_1.py"
+                "cmd": "python3 practice.py",
+                "openFile": "/root/practice.py"
             },
             {
                 "title": "Успех",
@@ -56,7 +56,7 @@
                     "chmod": "+x"
                 },
                 {
-                    "file": "step_1.py",
+                    "file": "practice.py",
                     "target": "/root"
                 },
                 {
