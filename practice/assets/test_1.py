@@ -5,7 +5,7 @@ import re
 from checker import SberChecker
 
 
-filename = f'practice.py'
+filename = 'practice.py'
 
 my_tests = [
     {
