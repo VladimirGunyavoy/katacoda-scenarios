@@ -4,9 +4,8 @@ import re
 
 from checker import SberChecker
 
-index = re.search(r'\d+', os.path.basename(__file__)).group()
 
-filename = f'step_{index}.py'
+filename = f'practice.py'
 
 my_tests = [
     {
@@ -20,7 +19,7 @@ sber_checker = SberChecker(
     tests=my_tests,
 )
 res = sber_checker.run()
-res['Test 1']['passed'] = True
+res['Test 1']['passed'] = False
 
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
