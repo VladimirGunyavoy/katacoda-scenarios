@@ -1,32 +1,25 @@
 {
     "pathwayTitle": "Python 1",
-    "title": "FrameWorkTest",
+    "title": "Practice",
     "description": "проверка",
     "difficulty": "beginner",
     "time": "30 minutes",
     "details": {
         "steps": [
             {
-                "title": "Задание 1",
-                "text": "lesson_1_part_1_problem_1.md",
-                "checkPolicyName": "lesson_1_part_1_problem_1",
-		"cmd": "python3 step0.py",
-		"openFile": "/root/step0.py"
-            },
-            {
-                "title": "Задание 2",
-                "text": "lesson_1_part_1_problem_1.md",
-                "checkPolicyName": "lesson_1_part_1_problem_2",
-		"cmd": "python3 step0.py",
+                "title": "Практика",
+                "text": "problem.md",
+                "checkPolicyName": "problem",
+		"cmd": "python3 step.py",
 		"openFile": "/root/step0.py"
             },
             {
                 "title": "Успех",
-                "text": "lesson_1_part_1_outro.md"
+                "text": "problem.md"
             }
         ],
         "intro": {
-            "text": "lesson_1_part_1_intro.md",
+            "text": "intro.md",
             "background": "courseBase.sh",
             "credits": ""
         },
@@ -38,9 +31,9 @@
                 {"file": "verify.py", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-				{"file": "step0.py", "target": "/root"},
+				{"file": "step.py", "target": "/root"},
 				{"file": "test_sum.py", "target": "/usr/local/lib/"},
-				{"file": "tests_1.txt", "target": "/usr/local/lib/"},
+				{"file": "test.txt", "target": "/usr/local/lib/"},
                 {"file": "checker.py", "target":"/usr/local/lib/"}
             ]
         },
