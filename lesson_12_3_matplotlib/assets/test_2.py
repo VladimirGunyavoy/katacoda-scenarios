@@ -11,7 +11,7 @@ filename = f'step_{index}.py'
 my_tests = [
     {
         "input": [],
-        "output": ["test"]
+        "output": [""]
     },
 
 ]
@@ -19,6 +19,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'plt.title(' in code,
+    should_include_message="Вы не использовал plt.title в вашем коде",
 )
 res = sber_checker.run()
 
