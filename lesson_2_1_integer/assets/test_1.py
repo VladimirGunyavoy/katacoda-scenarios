@@ -10,8 +10,8 @@ filename = f'step_1.py'
 
 my_tests = [
     {
-        'input': [],
-        'output': []
+        'input': [''],
+        'output': ['']
     },
 ]
 
@@ -19,7 +19,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'trees_number = 10' in code,
-    should_include_message='не обнаружено корректного создания переменной trees_number. \nКомментарий: формат должен быть имя_переменной = значение.'
+    should_include_message='не обнаружено корректного создания переменной trees_number. Комментарий: формат должен быть имя_переменной = значение.'
 )
 res = sber_checker.run()
 
