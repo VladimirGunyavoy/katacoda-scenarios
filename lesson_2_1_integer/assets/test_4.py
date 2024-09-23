@@ -19,7 +19,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'trees_number *= 3' in code,
-    should_include_message='не обнаружено изменения переменной trees_number. \nКомментарий: формат должен быть ИМЯ_ПЕРЕМЕННОЙ *= ЗНАЧЕНИЕ.'
+    should_include_message='не обнаружено корректного изменения переменной trees_number. \nКомментарий: формат должен быть имя_переменной *= значение.'
 )
 res = sber_checker.run()
 
