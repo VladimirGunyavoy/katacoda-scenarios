@@ -6,7 +6,7 @@ from checker import SberChecker
 
 index = re.search(r'\d+', os.path.basename(__file__)).group()
 
-filename = f'step_{index}.py'
+filename = f'step_2.py'
 
 my_tests = [
     {
@@ -18,6 +18,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'trees_number += 1' in code,
+    should_include_message='не обнаружено изменения переменной trees_number. \nКомментарий: формат должен быть ИМЯ_ПЕРЕМЕННОЙ += ЗНАЧЕНИЕ.'
 )
 res = sber_checker.run()
 
