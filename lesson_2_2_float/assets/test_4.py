@@ -11,13 +11,20 @@ filename = f'step_{index}.py'
 my_tests = [
     {
         'input': [],
-        'output': ["общая стоимость на всех: 13.44"]
+        'output': ["стоимость кофе: 1.99", 
+                   "стоимость пончика: 2.49", 
+                   "общая стоимость: 4.48",
+                   "общая стоимость со скидкой: 3.61",
+                   "общая стоимость на всех: 10.83"]
     },
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'cost *= friends_number' in code,
+    should_include_message='не обнаружено корректного изменения переменной cost. необходимый формат: переменная *= переменная'
+
 )
 res = sber_checker.run()
 

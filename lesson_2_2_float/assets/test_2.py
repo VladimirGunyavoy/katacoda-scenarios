@@ -11,13 +11,17 @@ filename = f'step_{index}.py'
 my_tests = [
     {
         'input': [],
-        'output': ["стоимость пончика: 2.49", "общая стоимость: 4.48"]
+        'output': ["стоимость кофе: 1.99", 
+                   "стоимость пончика: 2.49", 
+                   "общая стоимость: 4.48"]
     },
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'doughnut_price = 1.99' in code,
+    should_include_message='не обнаружено корректного создания переменной doughnut_price'
 )
 res = sber_checker.run()
 
