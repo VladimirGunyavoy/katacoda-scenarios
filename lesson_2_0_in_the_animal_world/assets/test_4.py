@@ -23,7 +23,10 @@ my_tests = [
 def my_should(code):
     word_lst = ['day', 'month', 'year']
     for word in word_lst:
-        if (((word+' =') not in code) or ((word+'=') not in code)):
+        print('(((word+) not in code)', (((word+' =') not in code)))
+        print('((word+) not in code))', ((word+'=') not in code))
+
+        if (((word+' =') not in code) and ((word+'=') not in code)):
             return False
     return True 
 
@@ -38,3 +41,4 @@ res = sber_checker.run()
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
 print(json_res)
+

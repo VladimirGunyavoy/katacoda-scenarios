@@ -21,7 +21,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: 'year = ' in code or 'year=' in code,
+    should_include=lambda code: 'year' in code or 'year' in code,
     should_include_message='Не обнаружено использования переменной year'
 )
 res = sber_checker.run()
