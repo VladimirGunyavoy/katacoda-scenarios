@@ -23,9 +23,6 @@ my_tests = [
 def my_should(code):
     word_lst = ['day', 'month', 'year']
     for word in word_lst:
-        print('(((word+) not in code)', (((word+' =') not in code)))
-        print('((word+) not in code))', ((word+'=') not in code))
-
         if (((word+' =') not in code) and ((word+'=') not in code)):
             return False
     return True 
