@@ -20,7 +20,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: 'doughnut_price = 1.99' in code,
+    should_include=lambda code: 'doughnut_price = 2.49' in code,
     should_include_message='не обнаружено корректного создания переменной doughnut_price'
 )
 res = sber_checker.run()
