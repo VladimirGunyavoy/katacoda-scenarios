@@ -20,9 +20,18 @@ my_tests = [
     },
 ]
 
+def my_should(code):
+    word_lst = ['day', 'month', 'year']
+    for word in word_lst:
+        if ((word+' =') not in code) or ((word+'=') not in code):
+            return False
+    return True 
+
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=my_should,
+    should_include_message='Не обнаружено использования одной или нескольких переменных переменных: day, month, year.'
 )
 res = sber_checker.run()
 

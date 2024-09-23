@@ -21,6 +21,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'day = ' in code or 'day=' in code,
+    should_include_message='Не обнаружено использования переменной day'
 )
 res = sber_checker.run()
 
