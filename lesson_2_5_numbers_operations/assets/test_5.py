@@ -23,6 +23,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'float(' in code,
+    should_include_message='не обнаружено использования функции float'
 )
 res = sber_checker.run()
 

@@ -20,6 +20,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'input(' in code,
+    should_include_message='не обнаружено использования функции input'
 )
 res = sber_checker.run()
 
