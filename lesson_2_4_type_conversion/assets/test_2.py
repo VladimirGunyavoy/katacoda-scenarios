@@ -18,6 +18,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include='burger_price_float_int = int(burger_price_float)',
+    should_include_message='не обнаружено корректного создания переменной burger_price_float_int'
 )
 res = sber_checker.run()
 
