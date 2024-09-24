@@ -14,7 +14,9 @@ my_tests = [
 
 sber_checker = SberChecker(
     filename=filename,
-    tests=my_tests
+    tests=my_tests,
+    should_include=lambda code: 'taxi' in code and 'warm_clothes' in code,
+    should_include_message='не обнаружено переменных taxi и warm_clothes'
 )
 res = sber_checker.run()
 

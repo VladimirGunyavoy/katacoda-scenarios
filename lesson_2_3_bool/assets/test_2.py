@@ -18,6 +18,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include='wind = False',
+    should_include_message='не обнаружено корректного создания переменной wind'
 )
 res = sber_checker.run()
 
