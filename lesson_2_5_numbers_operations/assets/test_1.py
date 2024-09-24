@@ -25,7 +25,7 @@ def my_check(code):
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=my_check(),
+    should_include=my_check ,
     should_include_message='не обнаружено использования операций целочисленного деления и взятия остатка'
 )
 res = sber_checker.run()
