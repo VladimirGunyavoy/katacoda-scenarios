@@ -10,15 +10,19 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        'input': ["1"],  # 1 1
+        'input': ["0"],  # 1 1
         'output': ["coin 1: True", "coin 2: True", "", "True"]
     },
     {
-        'input': ["2"],  # 0 1
+        'input': ["1"],  # 0 0
+        'output': ["coin 1: False", "coin 2: False", "", "False"]
+    },
+    {
+        'input': ["4"],  # 0 1
         'output': ["coin 1: False", "coin 2: True", "", "False"]
     },
     {
-        'input': ["3"],  # 0 0
+        'input': ["7"],  # 1 0
         'output': ["coin 1: False", "coin 2: False", "", "False"]
     },
 ]
