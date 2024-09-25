@@ -23,7 +23,7 @@ my_tests = [
     },
     {
         'input': ["7"],  # 1 0
-        'output': ["coin 1: False", "coin 2: True", "", "False"]
+        'output': ["coin 1: True", "coin 2: False", "", "False"]
     },
 ]
 
