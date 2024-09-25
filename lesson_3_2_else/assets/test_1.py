@@ -14,7 +14,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: 'sunny =' in code,
+    should_include=lambda code: 'sunny = True' in code,
     should_include_message='не обнаружено корректного создания переменной sunny'
 )
 res = sber_checker.run()

@@ -1,9 +1,9 @@
 # темная магия для получения броска монетки
 # и вывода значения
 # ничего не меняйте
-import numpy as np
+import random
+coin = random.randint(0, 1)
 
-coin = np.random.randint(0, 2)
 print('coin', coin)
 print()
 
