@@ -7,11 +7,11 @@ filename = 'step_1.py'
 
 my_tests = [
     {
-        'input': ["11"],
+        'input': ["2"],
         'output':["coin 0", "True"]
     },
     {
-        'input': ["2"],
+        'input': ["11"],
         'output':["coin 1", "False"]
     },
 ]
