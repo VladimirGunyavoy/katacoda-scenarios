@@ -1,5 +1,5 @@
 a = True
-b =  # ваш код
+b = # ваш код
 
 if a and not b:
     print('пора идти дальше')
