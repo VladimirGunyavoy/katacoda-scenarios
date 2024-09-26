@@ -16,7 +16,7 @@ my_tests = [
 ]
 
 test_code = '''
-if a and not b:
+if not a and not b:
     print('пора идти дальше')
 else:
     print('пока посидим тут')
