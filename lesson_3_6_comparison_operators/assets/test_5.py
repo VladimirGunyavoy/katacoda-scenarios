@@ -10,16 +10,24 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        'input': ["1"],  # 6 4
-        'output': ["dice 1: 6", "dice 2: 4", "", "fail"]
-    },
-    {
-        'input': ["2"],  # 1 6
-        'output': ["dice 1: 1", "dice 2: 6", "", "win"]
-    },
-    {
-        'input': ["12"],  # 4 4
+        'input': ["0"],  # 4 4
         'output': ["dice 1: 4", "dice 2: 4", "", "fail"]
+    },
+    {
+        'input': ["1"],  # 2 5
+        'output': ["dice 1: 2", "dice 2: 5", "", "win"]
+    },
+    {
+        'input': ["5"],  # 5 3
+        'output': ["dice 1: 5", "dice 2: 3", "", "fail"]
+    },
+    {
+        'input': ["18"],  # 2 1
+        'output': ["dice 1: 2", "dice 2: 1", "", "fail"]
+    },
+    {
+        'input': ["13"],  # 3 3
+        'output': ["dice 1: 3", "dice 2: 3", "", "fail"]
     },
 ]
 

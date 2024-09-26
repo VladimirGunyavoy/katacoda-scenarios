@@ -9,3 +9,4 @@ print('dice 2:', dice2)
 print()
 
 # ваш код
+

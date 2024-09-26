@@ -11,7 +11,7 @@ filename = f'step_{index}.py'
 my_tests = [
     {
         'input': ["0"],  # 4 4
-        'output': ["dice 1: 4", "dice 2: 4", "", "fail"]
+        'output': ["dice 1: 4", "dice 2: 4", "", "win"]
     },
     {
         'input': ["1"],  # 2 5
@@ -24,7 +24,11 @@ my_tests = [
     {
         'input': ["18"],  # 2 1
         'output': ["dice 1: 2", "dice 2: 1", "", "win"]
-    }
+    },
+    {
+        'input': ["13"],  # 3 3
+        'output': ["dice 1: 3", "dice 2: 3", "", "win"]
+    },
 ]
 
 precode = """

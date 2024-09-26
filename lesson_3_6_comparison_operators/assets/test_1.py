@@ -24,7 +24,11 @@ my_tests = [
     {
         'input': ["18"],  # 2 1
         'output': ["dice 1: 2", "dice 2: 1", "", "win"]
-    }
+    },
+    {
+        'input': ["13"],  # 3 3
+        'output': ["dice 1: 3", "dice 2: 3", "", "fail"]
+    },
 ]
 
 precode = """
