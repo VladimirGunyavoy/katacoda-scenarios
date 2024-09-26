@@ -41,6 +41,40 @@ my_tests = [
             "превышение 3"
         ]
     },
+    {
+        'input': [2345],
+        'output': [
+            "count 6",
+            "count 11",
+            "count 15",
+            "count 20",
+            "count 22",
+            "count 23",
+            "count 26",
+            "count 27",
+            "count 31",
+            "count 34",
+            "count 37",
+            "превышение 0"
+        ]
+    },
+    {
+        'input': [763],
+        'output': [
+            "count 5",
+            "count 6",
+            "count 10",
+            "count 11",
+            "count 12",
+            "count 17",
+            "count 18",
+            "count 24",
+            "count 27",
+            "count 32",
+            "count 38",
+            "превышение 1"
+        ]
+    },
 ]
 
 precode = """

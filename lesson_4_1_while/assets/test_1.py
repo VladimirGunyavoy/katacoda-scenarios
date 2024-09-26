@@ -26,6 +26,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'while' in code,
+    should_include_message='необходимо использовать цикл while'
 )
 res = sber_checker.run()
 

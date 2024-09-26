@@ -18,6 +18,36 @@ my_tests = [
             "Restaurant rating: 83"
         ]
     },
+    {
+        'input': [2],
+        'output': [
+            "Restaurant rating: 8",
+            "Restaurant rating: 12",
+            "Restaurant rating: 11",
+            "Restaurant rating: 47",
+            "Restaurant rating: 22",
+            "Restaurant rating: 95"
+        ]
+    },
+    {
+        'input': [8],
+        'output': [
+            "Restaurant rating: 30",
+            "Restaurant rating: 48",
+            "Restaurant rating: 49",
+            "Restaurant rating: 17",
+            "Restaurant rating: 25",
+            "Restaurant rating: 91"
+        ]
+    },
+    {
+        'input': [9],
+        'output': [
+            "Restaurant rating: 60",
+            "Restaurant rating: 79"
+        ]
+    },
+    
 ]
 
 precode = """

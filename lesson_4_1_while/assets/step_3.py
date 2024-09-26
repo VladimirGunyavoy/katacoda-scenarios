@@ -6,4 +6,3 @@ while True:
     print('Restaurant rating:', rating)
 
     # ваш код
-    ...
