@@ -18,6 +18,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'for' in code and 'while' not in code,
+    should_include_message='необходимо использовать цикл for, а не while'
 )
 res = sber_checker.run()
 

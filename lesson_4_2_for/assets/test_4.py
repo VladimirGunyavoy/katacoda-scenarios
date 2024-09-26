@@ -16,10 +16,19 @@ my_tests = [
         'output': output
     },
 ]
+def should_include(code):
+    text = '''
+for count in range(50):
+    print('число приседаний', count)
+    '''
+
+    return text in code
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=should_include,
+    should_include_message='что-то сломалось в задании цикла'
 )
 res = sber_checker.run()
 

@@ -20,6 +20,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'for i in range(1, 31):' in code,
+    should_include_message='что-то сломалось в задании цикла'
 )
 res = sber_checker.run()
 
