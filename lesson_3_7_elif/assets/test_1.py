@@ -29,7 +29,9 @@ my_tests = [
 
 sber_checker = SberChecker(
     filename=filename,
-    tests=my_tests
+    tests=my_tests,
+    should_include=lambda code: 'elif' in code and 'if' in code,
+    should_include_message='не обнаружено использования if и elif'
 )
 res = sber_checker.run()
 
