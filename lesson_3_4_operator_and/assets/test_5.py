@@ -17,9 +17,9 @@ my_tests = [
 
 test_code = '''
 if not a and not b:
-    print('пора идти дальше')
+  print('пора идти дальше')
 else:
-    print('пока посидим тут')
+  print('пока посидим тут')
 '''
 
 sber_checker = SberChecker(
