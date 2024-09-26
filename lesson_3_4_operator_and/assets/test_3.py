@@ -19,8 +19,7 @@ test_code = '''
 if a and not b:
     print('пора идти дальше')
 else:
-    print('пока посидим тут')
-'''
+    print('пока посидим тут')'''
 
 sber_checker = SberChecker(
     filename=filename,
