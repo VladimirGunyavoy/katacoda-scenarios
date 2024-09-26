@@ -11,4 +11,3 @@ print('1 — да, 0 — нет')
 free_coffee = int(input())
 
 # Ваш код
-...

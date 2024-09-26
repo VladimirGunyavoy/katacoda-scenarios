@@ -60,13 +60,13 @@ my_tests = [
 ]
 
 def should_include(code):
-    return "elif " not in code
+    return "elif " not in code or "else " not in code
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=should_include,
-    should_include_message="Ваш код не должен содержать `elif`",
+    should_include_message="ваш код не должен содержать else или elif",
 )
 res = sber_checker.run()
 
