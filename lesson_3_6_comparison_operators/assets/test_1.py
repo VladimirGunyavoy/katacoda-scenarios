@@ -24,8 +24,8 @@ my_tests = [
 ]
 
 precode = """
-import numpy as np
-np.random.seed(seed=int(input()))
+import random
+random.seed(int(input()))
 """
 
 sber_checker = SberChecker(
