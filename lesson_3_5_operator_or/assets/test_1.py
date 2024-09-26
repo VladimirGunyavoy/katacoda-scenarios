@@ -19,11 +19,11 @@ my_tests = [
     },
     {
         'input': ["4"],  # 0 1
-        'output': ["coin 1: False", "coin 2: True", "", "False"]
+        'output': ["coin 1: False", "coin 2: True", "", "True"]
     },
     {
         'input': ["7"],  # 1 0
-        'output': ["coin 1: True", "coin 2: False", "", "False"]
+        'output': ["coin 1: True", "coin 2: False", "", "True"]
     },
 ]
 
