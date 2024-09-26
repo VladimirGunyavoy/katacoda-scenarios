@@ -10,22 +10,26 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        'input': ["1"],  # 1 1
+        'input': ["0"],  # 1 1
         'output': ["coin 1: True", "coin 2: True", "", "включить свет"]
     },
     {
-        'input': ["2"],  # 0 1
+        'input': ["1"],  # 0 0
+        'output': ["coin 1: False", "coin 2: False", "", "включить свет"]
+    },
+    {
+        'input': ["4"],  # 0 1
         'output': ["coin 1: False", "coin 2: True", "", "включить свет"]
     },
     {
-        'input': ["3"],  # 0 0
-        'output': ["coin 1: False", "coin 2: False", "", "не включаем свет"]
+        'input': ["7"],  # 1 0
+        'output': ["coin 1: True", "coin 2: False", "", "не включаем свет"]
     },
 ]
 
 precode = """
-import numpy as np
-np.random.seed(seed=int(input()))
+import random
+random.seed(int(input()))
 """
 
 sber_checker = SberChecker(
