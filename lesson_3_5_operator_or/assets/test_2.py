@@ -14,17 +14,17 @@ my_tests = [
         'output': ["coin 1: True", "coin 2: True", "", "включить свет"]
     },
     {
-        'input': ["1"],  # 0 0
-        'output': ["coin 1: False", "coin 2: False", "", "включить свет"]
-    },
-    {
         'input': ["4"],  # 0 1
         'output': ["coin 1: False", "coin 2: True", "", "включить свет"]
     },
     {
         'input': ["7"],  # 1 0
-        'output': ["coin 1: True", "coin 2: False", "", "не включаем свет"]
+        'output': ["coin 1: True", "coin 2: False", "", "включить свет"]
     },
+    {
+        'input': ["1"],  # 0 0
+        'output': ["coin 1: False", "coin 2: False", "", "не включаем свет"]
+    }
 ]
 
 precode = """
