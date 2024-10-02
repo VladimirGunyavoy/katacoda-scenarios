@@ -15,12 +15,20 @@ my_tests = [
     },
 ]
 
+def should_include(code):
+    return 'my_string[' in code
+
+    return
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=should_include,
+    should_include_message='не обнаружено экстракции символов из данной строки вида my_string[x]'
 )
 res = sber_checker.run()
 
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
 print(json_res)
+
+

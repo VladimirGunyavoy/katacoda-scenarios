@@ -10,7 +10,7 @@
 
 Вывод: `alle warten auf das licht`
 
-\\
+
 
 Ввод: `mY_vArIaBlE`
 

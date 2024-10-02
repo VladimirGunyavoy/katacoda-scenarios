@@ -17,6 +17,14 @@ my_tests = [
         'input': ['sum(2, 3)'],
         'output': ['+ not included']
     },
+    {
+        'input': ['asdg + sgdh'],
+        'output': ['pass']
+    },
+    {
+        'input': ['просто какое-то текст'],
+        'output': ['+ not included']
+    },
 ]
 
 sber_checker = SberChecker(

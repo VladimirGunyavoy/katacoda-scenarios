@@ -15,10 +15,12 @@ my_tests = [
     },
 ]
 
+
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: '[-' in code or ':-' in code,
+    should_include_message='не обнаружено экстракции символов с помощью срезов или отсутствует отрицательный индекс'
 )
 res = sber_checker.run()
 

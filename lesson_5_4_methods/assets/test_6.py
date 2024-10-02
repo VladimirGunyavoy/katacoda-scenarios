@@ -17,12 +17,24 @@ my_tests = [
         'input': ['0 + 3000'],
         'output': ['3000']
     },
+    {
+        'input': ['1500 + 2500 + 3500'],
+        'output': ['7500']
+    },
+    {
+        'input': ['500 + 1500 + 2500'],
+        'output': ['4500']
+    },
+    {
+        'input': ['100 + 200 + 300 + 400'],
+        'output': ['1000']
+    }
+
 ]
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: '[-' in code or ':-' in code,
 )
 res = sber_checker.run()
 

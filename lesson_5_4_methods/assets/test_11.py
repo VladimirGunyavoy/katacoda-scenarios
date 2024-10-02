@@ -13,6 +13,28 @@ my_tests = [
         'input': ['file_1.txt'],
         'output': ['C:\\Users\\Ivan\\Desktop\\Secrets\\file_1.txt']
     },
+
+    {
+        "input": ["file_2.txt"],
+        "output": ["C:\\Users\\Ivan\\Desktop\\Secrets\\file_2.txt"]
+    },
+
+    {
+        "input": ["document.pdf"],
+        "output": ["C:\\Users\\Ivan\\Desktop\\Secrets\\document.pdf"]
+    },
+
+
+    {
+        "input": ["image.png"],
+        "output": ["C:\\Users\\Ivan\\Desktop\\Secrets\\image.png"]
+    },
+
+    {
+        "input": ["notes.docx"],
+        "output": ["C:\\Users\\Ivan\\Desktop\\Secrets\\notes.docx"]
+    },
+
 ]
 
 sber_checker = SberChecker(
