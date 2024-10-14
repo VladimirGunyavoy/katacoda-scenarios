@@ -68,6 +68,7 @@
                 {"file": "data_1.csv","target": "/root"},
                 {"file": "report.txt","target": "/root"},
                 {"file": "test_0.py", "target": "/usr/local/lib/"},
+                {"file": "empty.py", "target": "/usr/local/lib/"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
                 {"file": "test_3.py", "target": "/usr/local/lib/"},
