@@ -57,6 +57,8 @@ sber_checker_2 = SberChecker(
 )
 
 res_1 = sber_checker_1.run()
+print(res_1)
+print()
 res_1['Test 0'] = res_1.pop('Test 1')
 res_2 = sber_checker_2.run()
 
@@ -65,4 +67,3 @@ res = res_1 | res_2
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
 print(json_res)
-# 
