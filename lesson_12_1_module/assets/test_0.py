@@ -10,7 +10,7 @@ filename = f'step_{index}.py'
 
 my_tests = [
     {
-        "input": [],
+        "input": [''],
         "output": ["Hello, World!"]
     },
 
