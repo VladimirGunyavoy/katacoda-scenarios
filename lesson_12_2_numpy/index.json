@@ -57,7 +57,7 @@
                 {"file": "step_3.py", "target": "/root"},
                 {"file": "step_4.py", "target": "/root"},
                 {"file": "data.csv","target": "/root"},
-                {"file": "data1.csv","target": "/root"},
+                {"file": "data_1.csv","target": "/root"},
                 {"file": "report.txt","target": "/root"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
