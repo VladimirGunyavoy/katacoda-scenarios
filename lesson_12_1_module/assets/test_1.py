@@ -7,7 +7,7 @@ from checker import SberChecker
 
 index = re.search(r'\d+', os.path.basename(__file__)).group()
 
-filename = f'filename.py'
+filename = f'step_{index}.py'
 
 nums_1 = random.sample(range(1, 50), 5)
 res_1 = round(sum(nums_1), 2) / len(nums_1)
