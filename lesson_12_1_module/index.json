@@ -60,6 +60,7 @@
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "step_0.py", "target": "/root"},
+                {"file": "step_1.py", "target": "/root"},
                 {"file": "step_2.py", "target": "/root"},
                 {"file": "step_3.py", "target": "/root"},
                 {"file": "step_4.py", "target": "/root"},
