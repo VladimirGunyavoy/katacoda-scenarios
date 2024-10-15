@@ -27,16 +27,16 @@ my_tests_1 = [
 
 my_tests_2 = [
     {
-        "input": [nums_1],
-        "output": [res_1]
+        "input": [str(nums_1)],
+        "output": [str(es_1)]
     },
     {
-        "input": [nums_2],
-        "output": [res_2]
+        "input": [str(nums_2)],
+        "output": [str(res_2)]
     },
     {
-        "input": [nums_3],
-        "output": [res_3]
+        "input": [str(nums_3)],
+        "output": [str(res_3)]
     },
 ]
 
