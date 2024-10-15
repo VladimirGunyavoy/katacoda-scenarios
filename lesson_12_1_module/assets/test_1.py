@@ -43,7 +43,7 @@ my_tests_2 = [
 postcode = """\n
 import my_module as mm
 inp = input()
-print(my_mean(inp))
+print(mm.my_mean(inp))
 """
 
 sber_checker_1 = SberChecker(
@@ -52,7 +52,7 @@ sber_checker_1 = SberChecker(
 )
 
 sber_checker_2 = SberChecker(
-    filename='empty.py',
+    filename='/usr/local/lib/empty.py',
     tests=my_tests_2,
     postcode=postcode,
 )
