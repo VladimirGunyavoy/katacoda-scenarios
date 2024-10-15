@@ -53,7 +53,7 @@ sber_checker_1 = SberChecker(
 
 os.chdir('/usr/local/lib')
 print(os.getcwd())
-
+print()
 sber_checker_2 = SberChecker(
     filename='empty.py',
     tests=my_tests_2,
