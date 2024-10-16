@@ -20,7 +20,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'plt.title(' in code,
-    should_include_message="Вы не использовал plt.title в вашем коде",
+    should_include_message="Не обнаружено использования plt.title в вашем коде",
 )
 res = sber_checker.run()
 

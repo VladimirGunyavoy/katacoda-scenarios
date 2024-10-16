@@ -20,7 +20,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'plt.plot(np.ones(' in code,
-    should_include_message="Вы не использовали plt.plot(np.ones(...)) в вашем коде",
+    should_include_message="Не обнаружено plt.plot(np.ones(...)) в вашем коде",
 )
 res = sber_checker.run()
 

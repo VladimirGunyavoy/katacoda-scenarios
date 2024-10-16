@@ -19,8 +19,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: 'plt.xticks(' in code,
-    should_include_message="Вы не использовали plt.xticks в вашем коде",
+    should_include=lambda code: 'plt.xticks(' in code and 'ticks=range(len(months)' in code,
+    should_include_message="Не обнаружено использования plt.xticks в вашем коде и/или подстановки месяцев",
 )
 res = sber_checker.run()
 

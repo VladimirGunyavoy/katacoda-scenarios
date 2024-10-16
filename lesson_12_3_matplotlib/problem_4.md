@@ -4,7 +4,8 @@
 
 В конце программы допишите команду
 
-```python
+```
+python
 plt.xticks(ticks=range(len(months)))
 ```
 

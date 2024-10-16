@@ -49,6 +49,8 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     postcode=postcode,
+    should_include=lambda code: 'mean' in code and 'min' in code and 'max' in code and 'numpy' in code,
+    should_include_message='не обнаружено использования numpy'
 )
 res = sber_checker.run()
 

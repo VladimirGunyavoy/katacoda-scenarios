@@ -20,7 +20,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: 'plt.plot(' in code,
-    should_include_message="Вы не использовали plt.plot в вашем коде"
+    should_include_message="не обнаружено использования plt.plot"
 )
 res = sber_checker.run()
 

@@ -20,7 +20,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: "for i, year in" in code and "plt.subplot(1, 3" in code,
-    should_include_message="Вы не использовали цикл 'for i, year in' и/или plt.subplot(1, 3, i+1) вашем коде",
+    should_include_message="Не обнаружено использования цикла 'for i, year in' и/или plt.subplot(1, 3, i+1) вашем коде",
 )
 res = sber_checker.run()
 

@@ -27,15 +27,15 @@ my_tests_1 = [
 
 my_tests_2 = [
     {
-        "input": [str(nums_1)],
-        "output": [str(es_1)]
+        "input": [(nums_1)],
+        "output": [str(res_1)]
     },
     {
-        "input": [str(nums_2)],
+        "input": [(nums_2)],
         "output": [str(res_2)]
     },
     {
-        "input": [str(nums_3)],
+        "input": [(nums_3)],
         "output": [str(res_3)]
     },
 ]
@@ -59,7 +59,7 @@ sber_checker_2 = SberChecker(
 
 res_1 = sber_checker_1.run()
 res_1['Test 0'] = res_1.pop('Test 1')
-os.chdir('/usr/local/lib')
+# os.chdir('/usr/local/lib')
 res_2 = sber_checker_2.run()
 
 res = res_1 | res_2

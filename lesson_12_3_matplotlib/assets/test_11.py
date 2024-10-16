@@ -20,7 +20,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: "linestyle='-.'" in code and "linestyle='--'" in code,
-    should_include_message="Вы не использовали linestyle='-.' и/или linestyle='--' в вашем коде",
+    should_include_message="Не обнаружено использования linestyle='-.' и/или linestyle='--' в вашем коде",
 )
 res = sber_checker.run()
 
