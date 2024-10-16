@@ -52,14 +52,16 @@ sber_checker_1 = SberChecker(
 )
 
 sber_checker_2 = SberChecker(
-    filename='empty.py',
+    filename='/usr/local/lib/empty.py',
     tests=my_tests_2,
     postcode=postcode,
 )
 
 res_1 = sber_checker_1.run()
 res_1['Test 0'] = res_1.pop('Test 1')
-os.chdir('/usr/local/lib')
+
+# os.chdir('/usr/local/lib')
+
 res_2 = sber_checker_2.run()
 
 res = res_1 | res_2
