@@ -57,6 +57,7 @@ sber_checker_2 = SberChecker(
     postcode=postcode,
 )
 
+
 res_1 = sber_checker_1.run()
 res_1['Test 0'] = res_1.pop('Test 1')
 
