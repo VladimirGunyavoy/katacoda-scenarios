@@ -44,9 +44,19 @@ postcode = """\n
 
 """
 
+def should_include(code):
+    lst = ['my_module', 'my_mean', 'data_1.csv']
+    prod = 1
+    for name in lst:
+        prod *= int(name in code)
+
+    return bool(prod)
+
 sber_checker_1 = SberChecker(
     filename=filename,
     tests=my_tests_1,
+    should_include=should_include,
+    should_include_message='Не обнаружены необходимый импорты'
 )
 
 sber_checker_2 = SberChecker(
