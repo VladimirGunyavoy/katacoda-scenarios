@@ -40,9 +40,9 @@ my_tests_2 = [
     },
 ]
 
-# postcode = """\n
+postcode = """\n
 
-# """
+"""
 
 sber_checker_1 = SberChecker(
     filename=filename,
