@@ -41,7 +41,9 @@ my_tests_2 = [
 ]
 
 postcode = """\n
-
+import my_module as mm
+inp = input()
+print(mm.my_mean(inp))
 """
 
 def should_include(code):
@@ -60,7 +62,8 @@ sber_checker_1 = SberChecker(
 )
 
 sber_checker_2 = SberChecker(
-    filename='/usr/local/lib/empty.py',
+    # filename='/usr/local/lib/empty.py',
+    filename='empty.py',
     tests=my_tests_2,
     postcode=postcode,
 )
@@ -68,12 +71,9 @@ sber_checker_2 = SberChecker(
 
 res_1 = sber_checker_1.run()
 res_1['Test 0'] = res_1.pop('Test 1')
-
-# os.chdir('/usr/local/lib')
-
 res_2 = sber_checker_2.run()
 
-res = res_1 | res_2
+res = {**res_1, **res_2}
 
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
