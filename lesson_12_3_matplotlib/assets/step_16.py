@@ -23,4 +23,5 @@ for i, year in enumerate(data):
     ...
 
 
-plt.savefig('my_plot.jpg')
+
+plt.savefig('subplot.jpg')

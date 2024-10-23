@@ -10,7 +10,7 @@ year_max  = year_2021.max()
 После команды `plt.plot(mean, ...)` добавьте команду
 
 ```python
-plt.plot(np.ones(len(year_data)) * year_min,
+plt.plot(np.ones(len(year_2021)) * year_min,
        linestyle='-.',
        color='C7',
        alpha=0.7,

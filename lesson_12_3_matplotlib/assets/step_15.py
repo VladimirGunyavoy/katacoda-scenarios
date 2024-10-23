@@ -17,8 +17,9 @@ for i, year in enumerate(data):
 
     # ваш код
     ...
+
     plt.plot(year_data)
 
 
 
-plt.savefig('my_plot.jpg')
+plt.savefig('subplot.jpg')

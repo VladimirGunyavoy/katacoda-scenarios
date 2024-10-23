@@ -6,4 +6,4 @@ import matplotlib.pyplot as plt
 ...
 
 
-plt.savefig('my_plot.jpg')
+plt.savefig('line_plot.jpg')
