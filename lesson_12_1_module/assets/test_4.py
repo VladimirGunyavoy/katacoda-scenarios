@@ -64,6 +64,7 @@ sber_checker = SberChecker(
     precode=precode,
     tests=my_tests,
     should_include=should_include,
+    should_include_message='Не обнаружено необходимых импортов',
     postcode=postcode,
 )
 res = sber_checker.run()

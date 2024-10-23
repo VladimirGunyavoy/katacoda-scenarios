@@ -6,7 +6,7 @@ from checker import SberChecker
 
 index = re.search(r'\d+', os.path.basename(__file__)).group()
 
-filename = f'step_4.py'
+filename = f'step_{index}.py'
 
 my_tests = [
     {
@@ -36,6 +36,12 @@ my_tests = [
     },
 ]
 
+precode = '''\n
+import sys
+
+sys.path.insert(0, '/root')
+'''
+
 postcode = """\n
 ...
 with open('report.txt', 'r') as file:
@@ -45,12 +51,21 @@ with open('report.txt', 'w') as file:
     file.write("")
 """
 
+def should_include(code):
+    lst = ['my_module', 'make_report', 'data_1.csv', 'numpy']
+    prod = 1
+    for name in lst:
+        prod *= int(name in code)
+
+    return bool(prod)
+
 sber_checker = SberChecker(
     filename=filename,
+    precode=precode,
     tests=my_tests,
+    should_include=should_include,
+    should_include_message='Не обнаружено необходимых импортов',
     postcode=postcode,
-    should_include=lambda code: 'mean' in code and 'min' in code and 'max' in code and 'numpy' in code,
-    should_include_message='не обнаружено использования numpy'
 )
 res = sber_checker.run()
 
