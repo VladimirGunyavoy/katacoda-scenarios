@@ -52,7 +52,7 @@ with open('report.txt', 'w') as file:
 """
 
 def should_include(code):
-    lst = ['my_module', 'make_report', 'data_1.csv', 'numpy']
+    lst = ['my_module', 'make_report', 'data.csv']
     prod = 1
     for name in lst:
         prod *= int(name in code)
