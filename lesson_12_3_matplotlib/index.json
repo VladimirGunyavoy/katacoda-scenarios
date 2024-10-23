@@ -7,6 +7,13 @@
     "details": {
         "steps": [
             {
+                "title": "Задание 0",
+                "text": "problem_0.md",
+                "checkPolicyName": "problem_0",
+                "cmd": "python3 step_0.py",
+                "openFile": "/root/step_0.py"
+            },
+            {
                 "title": "Задание 1",
                 "text": "problem_1.md",
                 "checkPolicyName": "problem_1",
@@ -136,6 +143,7 @@
                 {"file": "verify.py", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
                 {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+                {"file": "step_0.py", "target": "/root"},
                 {"file": "step_1.py", "target": "/root"},
                 {"file": "step_2.py", "target": "/root"},
                 {"file": "step_3.py", "target": "/root"},
@@ -152,6 +160,7 @@
                 {"file": "step_14.py", "target": "/root"},
                 {"file": "step_15.py", "target": "/root"},
                 {"file": "step_16.py", "target": "/root"},
+                {"file": "test_0.py", "target": "/usr/local/lib/"},
                 {"file": "test_1.py", "target": "/usr/local/lib/"},
                 {"file": "test_2.py", "target": "/usr/local/lib/"},
                 {"file": "test_3.py", "target": "/usr/local/lib/"},
