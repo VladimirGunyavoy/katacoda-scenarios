@@ -62,7 +62,7 @@ sber_checker_1 = SberChecker(
 )
 
 sber_checker_2 = SberChecker(
-    # filename='/usr/local/lib/empty.py',
+    filename='/usr/local/lib/empty.py',
     filename='empty.py',
     tests=my_tests_2,
     postcode=postcode,
