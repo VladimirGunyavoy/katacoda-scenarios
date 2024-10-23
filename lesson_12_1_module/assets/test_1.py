@@ -12,12 +12,6 @@ filename = f'step_{index}.py'
 nums_1 = random.sample(range(1, 50), 5)
 res_1 = round(sum(nums_1), 2) / len(nums_1)
 
-nums_2 = random.sample(range(1, 50), 5)
-res_2 = round(sum(nums_2), 2) / len(nums_2)
-
-nums_3 = random.sample(range(1, 50), 5)
-res_3 = round(sum(nums_3), 2) / len(nums_3)
-
 my_tests_1 = [
     {
         "input": ['data_1.csv'],
@@ -30,16 +24,13 @@ my_tests_2 = [
         "input": [(nums_1)],
         "output": [str(res_1)]
     },
-    # {
-    #     "input": [(nums_2)],
-    #     "output": [str(res_2)]
-    # },
-    # {
-    #     "input": [(nums_3)],
-    #     "output": [str(res_3)]
-    # },
 ]
 
+precode = '''\n
+import sys
+
+sys.path.insert(0, '/root')
+'''
 postcode = """\n
 import my_module as mm
 inp = input()
@@ -56,6 +47,7 @@ def should_include(code):
 
 sber_checker_1 = SberChecker(
     filename=filename,
+    precode=precode
     tests=my_tests_1,
     should_include=should_include,
     should_include_message='Не обнаружены необходимый импорты'
