@@ -11,7 +11,7 @@ filename = f'step_{index}.py'
 my_tests = [
     {
         "input": [],
-        "output": []
+        "output": ['']
     },
 
 ]
