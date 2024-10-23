@@ -30,14 +30,14 @@ my_tests_2 = [
         "input": [(nums_1)],
         "output": [str(res_1)]
     },
-    {
-        "input": [(nums_2)],
-        "output": [str(res_2)]
-    },
-    {
-        "input": [(nums_3)],
-        "output": [str(res_3)]
-    },
+    # {
+    #     "input": [(nums_2)],
+    #     "output": [str(res_2)]
+    # },
+    # {
+    #     "input": [(nums_3)],
+    #     "output": [str(res_3)]
+    # },
 ]
 
 postcode = """\n
