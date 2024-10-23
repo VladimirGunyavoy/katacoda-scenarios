@@ -25,6 +25,11 @@ for i in range(N):
 
     my_tests_2.append({'input': [nums], 'output':[str(res)]})
 
+precode = '''\n
+import sys
+
+sys.path.insert(0, '/root')
+'''
 
 
 postcode = """\n
@@ -43,6 +48,7 @@ def should_include(code):
 
 sber_checker_1 = SberChecker(
     filename=filename,
+    precode=precode,
     tests=my_tests_1,
     should_include=should_include,
     should_include_message='Не обнаружены необходимый импорты'

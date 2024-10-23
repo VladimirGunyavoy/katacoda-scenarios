@@ -36,6 +36,12 @@ my_tests = [
     },
 ]
 
+precode = '''\n
+import sys
+
+sys.path.insert(0, '/root')
+'''
+
 postcode = """\n
 ...
 with open('report.txt', 'r') as file:
@@ -47,6 +53,7 @@ with open('report.txt', 'w') as file:
 
 sber_checker = SberChecker(
     filename=filename,
+    precode=precode,
     tests=my_tests,
     postcode=postcode,
 )

@@ -31,6 +31,7 @@ import sys
 
 sys.path.insert(0, '/root')
 '''
+
 postcode = """\n
 import my_module as mm
 inp = input()
