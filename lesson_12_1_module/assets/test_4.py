@@ -50,11 +50,19 @@ with open('report.txt', 'r') as file:
 with open('report.txt', 'w') as file:
     file.write("")
 """
+def should_include(code):
+    lst = ['my_module', 'make_report', 'data_1.csv']
+    prod = 1
+    for name in lst:
+        prod *= int(name in code)
+
+    return bool(prod)
 
 sber_checker = SberChecker(
     filename=filename,
     precode=precode,
     tests=my_tests,
+    should_include=should_include,
     postcode=postcode,
 )
 res = sber_checker.run()
