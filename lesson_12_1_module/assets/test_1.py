@@ -47,7 +47,7 @@ def should_include(code):
 
 sber_checker_1 = SberChecker(
     filename=filename,
-    precode=precode
+    precode=precode,
     tests=my_tests_1,
     should_include=should_include,
     should_include_message='Не обнаружены необходимый импорты'
