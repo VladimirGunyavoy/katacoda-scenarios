@@ -13,3 +13,7 @@ plt.ylabel('число клиентов в месяц')
 
 # ваш код
 ...
+
+
+
+plt.savefig('my_plot.jpg')

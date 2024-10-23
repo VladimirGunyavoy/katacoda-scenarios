@@ -15,3 +15,6 @@ for i, year in enumerate(data):
     year_data = data[year]
 
     plt.plot(year_data)
+
+
+plt.savefig('subplot.jpg')

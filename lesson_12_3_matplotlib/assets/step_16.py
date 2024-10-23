@@ -21,3 +21,6 @@ for i, year in enumerate(data):
     plt.plot(year_data, linestyle='--', alpha=0.7)
 
     ...
+
+
+plt.savefig('my_plot.jpg')

@@ -24,3 +24,5 @@ plt.ylabel('число клиентов в месяц')
 plt.xticks(ticks=range(len(months)), labels=months)
 plt.grid()
 plt.legend()
+
+plt.savefig('my_plot.jpg')

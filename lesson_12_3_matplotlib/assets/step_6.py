@@ -16,3 +16,6 @@ plt.grid()
 # ваш код
 mean = ...
 print(...)
+
+
+plt.savefig('my_plot.jpg')

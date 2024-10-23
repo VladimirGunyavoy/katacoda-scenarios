@@ -14,3 +14,5 @@ plt.xticks(ticks=range(len(months)), labels=months)
 
 # ваш код
 ...
+
+plt.savefig('my_plot.jpg')

@@ -9,13 +9,14 @@ mean = year_2021.mean()
 
 plt.title('Прирост клиентов за 2021 год')
 
-plt.plot(year_2021, label='прирост клиентов')
-
 # ваш код
-plt.plot(...)
+plt.plot(year_2021, ...)
+plt.plot(mean * np.ones(len(year_2021)), ...)
 
 plt.xlabel('месяц')
 plt.ylabel('число клиентов в месяц')
 plt.xticks(ticks=range(len(months)), labels=months)
 plt.grid()
 plt.legend()
+
+plt.savefig('my_plot.jpg')
