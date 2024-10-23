@@ -50,6 +50,7 @@ with open('report.txt', 'r') as file:
 with open('report.txt', 'w') as file:
     file.write("")
 """
+
 def should_include(code):
     lst = ['my_module', 'make_report', 'data_1.csv']
     prod = 1
