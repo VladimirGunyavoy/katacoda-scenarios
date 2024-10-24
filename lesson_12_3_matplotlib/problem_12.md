@@ -29,3 +29,8 @@ plt.plot(np.ones(len(year_2021)) * year_min,
 
 
 Для обновления графика программу нужно запустить.
+
+
+
+Ориентир:
+![TargetDown](./pics/img_12.jpg)

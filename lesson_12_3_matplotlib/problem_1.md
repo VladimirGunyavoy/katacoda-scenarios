@@ -2,11 +2,13 @@
 
 В самом начале программы записана команда
 
-`import matplotlib.pyplot as plt`
+```
+import matplotlib.pyplot as plt
+```
 
 Здесь происходит импортирование не всей библиотеки `matplotlib`, а только одного модуля из нее — `pyplot`. Для простоты мы присваиваем ему сокращение `plt`.
 
-После команды `year_2021 = ...` запишите команду:
+После команды `year_2021 = ...` запишите команды:
 ```
 plt.plot(year_2021)
 plt.savefig('my_plot.jpg')
@@ -16,3 +18,6 @@ plt.savefig('my_plot.jpg')
 ```
 plt.savefig(name)
 ```
+
+Ориентир:
+![TargetDown](./pics/img_1.jpg)
