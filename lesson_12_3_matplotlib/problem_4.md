@@ -35,4 +35,4 @@ labels=months
 
 
 Ориентир:
-![TargetDown](./pics/img_4_2.jpg)
+![TargetDown](./assets/img_4_2.jpg)

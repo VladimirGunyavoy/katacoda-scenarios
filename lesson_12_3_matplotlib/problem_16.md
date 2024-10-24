@@ -16,4 +16,4 @@
 
 
 Ориентир:
-![TargetDown](./pics/img_16.jpg)
+![TargetDown](./assets/img_16.jpg)

@@ -11,4 +11,4 @@ mean = year_2021.mean()
 
 
 Ориентир:
-![TargetDown](./pics/img_6.jpg)
+![TargetDown](./assets/img_6.jpg)

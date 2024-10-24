@@ -22,4 +22,4 @@ plt.title(str(year))
 
 
 Ориентир:
-![TargetDown](./pics/img_15.jpg)
+![TargetDown](./assets/img_15.jpg)

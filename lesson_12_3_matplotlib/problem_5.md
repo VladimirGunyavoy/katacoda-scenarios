@@ -9,4 +9,4 @@ plt.grid()
 
 
 Ориентир:
-![TargetDown](./pics/img_5.jpg)
+![TargetDown](./assets/img_5.jpg)

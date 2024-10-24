@@ -26,4 +26,4 @@ plt.plot(np.ones(5), 'o')
 
 
 Ориентир:
-![TargetDown](./pics/img_7.jpg)
+![TargetDown](./assets/img_7.jpg)

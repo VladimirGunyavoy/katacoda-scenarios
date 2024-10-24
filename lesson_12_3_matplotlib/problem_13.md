@@ -31,5 +31,5 @@ for i, year in enumerate(data):
 
 
 Ориентир:
-![TargetDown](./pics/img_13.jpg)
+![TargetDown](./assets/img_13.jpg)
 

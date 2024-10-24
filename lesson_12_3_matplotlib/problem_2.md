@@ -15,5 +15,5 @@ plt.title('прирост клиентов за 2021 год')
 
 
 Ориентир:
-![TargetDown](./pics/img_2.jpg)
+![TargetDown](./assets/img_2.jpg)
 

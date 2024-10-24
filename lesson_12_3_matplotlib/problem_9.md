@@ -13,4 +13,4 @@ plt.plot(mean * np.ones(len(year_2021)))
 
 
 Ориентир:
-![TargetDown](./pics/img_9.jpg)
+![TargetDown](./assets/img_9.jpg)

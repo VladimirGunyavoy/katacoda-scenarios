@@ -33,4 +33,4 @@ plt.plot(np.ones(len(year_2021)) * year_min,
 
 
 Ориентир:
-![TargetDown](./pics/img_12.jpg)
+![TargetDown](./assets/img_12.jpg)

@@ -14,4 +14,4 @@ plt.plot(10 * np.ones(5))
 
 
 Ориентир:
-![TargetDown](./pics/img_8.jpg)
+![TargetDown](./assets/img_8.jpg)

@@ -32,4 +32,4 @@ linestyle='-.'
 
 
 Ориентир:
-![TargetDown](./pics/img_11.jpg)
+![TargetDown](./assets/img_11.jpg)

@@ -14,4 +14,4 @@ plt.ylabel('число клиентов в месяц')
 
 
 Ориентир:
-![TargetDown](./pics/img_3.jpg)
+![TargetDown](./assets/img_3.jpg)

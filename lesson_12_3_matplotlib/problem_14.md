@@ -19,4 +19,4 @@ plt.figure(figsize=(15, 5))
 
 
 Ориентир:
-![TargetDown](./pics/img_14.jpg)
+![TargetDown](./assets/img_14.jpg)
