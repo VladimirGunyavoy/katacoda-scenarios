@@ -22,4 +22,4 @@ plt.legend()
 
 
 Ориентир:
-![TargetDown](./picassetss/img_10.jpg)
+![TargetDown](./assetss/img_10.jpg)
