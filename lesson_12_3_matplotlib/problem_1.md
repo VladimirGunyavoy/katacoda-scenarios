@@ -20,4 +20,4 @@ plt.savefig(name)
 ```
 
 Ориентир:
-![TargetDown](./pics/img_1.jpg)
+![TargetDown](./assets/img_1.jpg)

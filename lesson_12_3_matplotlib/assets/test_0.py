@@ -19,6 +19,8 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    should_include=lambda code: 'import matplotlib' in code,
+    should_include_message='Не обнаружено импорта matplotlib'
 )
 res = sber_checker.run()
 
