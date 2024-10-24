@@ -12,7 +12,7 @@ plt.xticks(ticks=range(len(months)))
 
 
 Ориентир:
-![TargetDown](./pics/img_4_1.jpg)
+![TargetDown](./assets/img_4_1.jpg)
 
 Затем замените ее на команду
 
