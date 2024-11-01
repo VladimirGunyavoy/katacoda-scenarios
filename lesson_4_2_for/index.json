@@ -147,5 +147,6 @@
     },
     "backend": {
         "imageid": "python"
-    }
+    },
+    "layoutType": "LAYOUT_TYPE_SIMPLE"
 }
