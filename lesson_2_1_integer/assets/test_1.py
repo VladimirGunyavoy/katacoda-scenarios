@@ -11,7 +11,7 @@ filename = f'step_1.py'
 my_tests = [
     {
         'input': [''],
-        'output': ['']
+        'output': ['число деревьев: 10']
     },
 ]
 
