@@ -18,12 +18,16 @@ my_tests = [
 def should_include(code):
     return 'my_string[' in code
 
-    return
+postcode='''\n
+if my_string != 'съешь ещё этих мягких французских булок, да выпей чаю.':
+    print('кто-то поменял переменную my_string :)')
+'''
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
+    postcode=postcode,
     should_include=should_include,
-    should_include_message='не обнаружено экстракции символов из данной строки вида my_string[x]'
+    should_include_message='не обнаружено экстракции символов из строки вида my_string[x]'
 )
 res = sber_checker.run()
 
