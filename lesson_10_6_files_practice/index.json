@@ -53,32 +53,116 @@
         },
         "assets": {
             "host01": [
-                {"file": "send.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "verify.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "verify.py", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "validate.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "load.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "step_1.py", "target": "/root"},
-                {"file": "step_2.py","target": "/root"},
-                {"file": "step_3.py","target": "/root"},
-                {"file": "step_4.py","target": "/root"},
-                {"file": "step_5.py","target": "/root"},
-                {"file": "reviews1.txt","target": "/root"},
-                {"file": "reviews2.txt","target": "/root"},
-                {"file": "financial_budget.csv","target": "/root"},
-                {"file": "purchases_and_refunds.csv","target": "/root"},
-                {"file": "purchases.csv","target": "/root"},
-                {"file": "average.csv","target": "/root"},
-                {"file": "employees.csv","target": "/root"},
-                {"file": "empoyees_full.csv","target": "/root"},
-                {"file": "salary.csv","target": "/root"},
-                {"file": "test_1.py", "target": "/usr/local/lib/"},
-                {"file": "test_2.py", "target": "/usr/local/lib/"},
-                {"file": "test_3.py", "target": "/usr/local/lib/"},
-                {"file": "test_4.py", "target": "/usr/local/lib/"},
-                {"file": "test_5.py", "target": "/usr/local/lib/"},
-                {"file": "checker.py", "target": "/usr/local/lib/"}
+                {
+                    "file": "send.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "courseBase.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "verify.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "verify.py",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "validate.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "load.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "step_1.py",
+                    "target": "/root"
+                },
+                {
+                    "file": "step_2.py",
+                    "target": "/root"
+                },
+                {
+                    "file": "step_3.py",
+                    "target": "/root"
+                },
+                {
+                    "file": "step_4.py",
+                    "target": "/root"
+                },
+                {
+                    "file": "step_5.py",
+                    "target": "/root"
+                },
+                {
+                    "file": "reviews1.txt",
+                    "target": "/root"
+                },
+                {
+                    "file": "reviews2.txt",
+                    "target": "/root"
+                },
+                {
+                    "file": "financial_budget.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "purchases_and_refunds.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "purchases.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "average.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "employees.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "empoyees_full.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "salary.csv",
+                    "target": "/root"
+                },
+                {
+                    "file": "test_1.py",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "test_2.py",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "test_3.py",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "test_4.py",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "test_5.py",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "checker.py",
+                    "target": "/usr/local/lib/"
+                }
             ]
         },
         "finish": {
@@ -87,12 +171,18 @@
     },
     "environment": {
         "showdashboard": true,
-        "dashboards": [{"name": "Prometheus", "port": 9090}],
+        "dashboards": [
+            {
+                "name": "Prometheus",
+                "port": 9090
+            }
+        ],
         "uilayout": "editor-terminal",
         "uisettings": "py",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
+    "layoutType": "LAYOUT_TYPE_SIMPLE",
     "backend": {
-      "imageid": "python"
+        "imageid": "python"
     }
 }
