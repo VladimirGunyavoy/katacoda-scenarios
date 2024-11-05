@@ -111,6 +111,18 @@
                 {
                     "file": "checker.py",
                     "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "step_1_2.png",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "step_3.png",
+                    "target": "/usr/local/lib/"
+                },
+                {
+                    "file": "step_4.png",
+                    "target": "/usr/local/lib/"
                 }
             ]
         },
