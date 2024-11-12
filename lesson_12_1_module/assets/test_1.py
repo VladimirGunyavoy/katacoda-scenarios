@@ -51,7 +51,7 @@ sber_checker_1 = SberChecker(
     precode=precode,
     tests=my_tests_1,
     should_include=should_include,
-    should_include_message='Не обнаружены необходимый импорты'
+    should_include_message='Не обнаружены необходимые импорты'
 )
 
 sber_checker_2 = SberChecker(
