@@ -5,9 +5,10 @@ employees = [
     {"name": "Даниил", "months": 6},
 ]
 
+# Функция return_names_by_months должна возвращать список имён сотрудников
 # Ваш код
 def return_names_by_months(employees_list):
     ...
-    return ...
+    return [...]
 
-# Функция должна возвращать список имён сотрудников
+
