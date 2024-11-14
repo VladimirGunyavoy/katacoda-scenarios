@@ -15,3 +15,6 @@ high_activity_count = 0
 
 # ваш код
 ...
+
+# код для проверки
+print(high_activity_count)

@@ -6,5 +6,10 @@ task_list = [
     {"task": "Мониторинг метрик", "progress": 0}
 ]
 
+status_list = []
+
 # ваш код
 ...
+
+# Вывод результата
+print(status_list)

@@ -7,4 +7,7 @@ users = [
 ]
 
 # ваш код
-...
+average_ltv = ...
+
+# код для проверки
+print(average_ltv)
