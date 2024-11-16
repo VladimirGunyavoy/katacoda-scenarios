@@ -6,5 +6,5 @@ results = [
 
 results[...] = ...
 
-print("NPS:", ...)
-print("LTV:", ...)
+print(results[0])
+print(results[1])
