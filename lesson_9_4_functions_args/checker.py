@@ -64,7 +64,7 @@ class SberChecker:
         args, expected_return = self.__check_inputs_outputs(test)
 
         try:
-            """ If output is empty, then we should try to execute solution function """
+            # If output is empty, then we should try to execute solution function
             if not expected_return and expected_return != 0:
                 if self.solution:
                     user_result = self.__execute_function(self.call, args, file_content)
@@ -100,7 +100,39 @@ class SberChecker:
             sys.stdout = sys.__stdout__
 
     def __check_include(self, file_content):
-        return self.should_include(file_content)
+        clean_code = file_content
+
+        # Обрабатываем многострочные комментарии обоих типов
+        for quotes in ('"""', "'''"):
+            while quotes in clean_code:
+                start = clean_code.find(quotes)
+                end = clean_code.find(quotes, start + 3)
+                if end == -1:  # Если нет закрывающих кавычек то отмена
+                    break
+                clean_code = clean_code[:start] + ' ' + clean_code[end + 3:]
+
+        # Обрабатываем однострочные комментарии и пустые строки
+        clean_lines = []
+        for line in clean_code.split('\n'):
+            # Убираем комментарии из строки
+            if '#' in line:
+                line = line[:line.find('#')]
+
+            line = line.strip()
+            if line:
+                clean_lines.append(line)
+
+        clean_code = ' '.join(clean_lines)
+
+        return self.should_include(clean_code)
+
+    def _convert_to_string(self, obj):
+        if isinstance(obj, (int, float)):
+            return str(obj)
+        elif isinstance(obj, (str, bool)):
+            return obj
+        elif isinstance(obj, list):
+            return [self._convert_to_string(item) for item in obj]
 
     def run(self):
         file_content = self.__file_read(self.filename)
@@ -133,9 +165,9 @@ class SberChecker:
                     should_include_result = ""
 
                 results[f'Test {index}'] = {
-                    'input': inputs if inputs else [],
-                    'expected': output if output else [],
-                    'result': result if result is not None else "",
+                    'input': self._convert_to_string(inputs) if inputs else [],
+                    'expected': self._convert_to_string(output) if output else [],
+                    'result': self._convert_to_string(result) if result is not None else "",
                     'passed': passed,
                     'error': error,
                     'should_include': should_include_result,
