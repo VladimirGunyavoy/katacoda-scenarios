@@ -17,7 +17,7 @@ my_tests = [
 
 
 def should_include(code):
-    test_code = '''if a and b:
+    test_code = '''if not a and b:
 print('пора идти дальше')
 else:
 print('пока посидим тут')'''
