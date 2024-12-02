@@ -17,8 +17,7 @@ my_tests = [
     },
 ]
 def should_include(code):
-    text = '''for count in range(50):
-    print('число приседаний', count)'''
+    text = '''for count in range(50): print('число приседаний', count)'''
 
     return text in code
 
