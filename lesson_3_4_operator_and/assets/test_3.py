@@ -15,8 +15,7 @@ my_tests = [
     },
 ]
 
-test_code = '''
-if a and not b:
+test_code = '''if a and not b:
     print('пора идти дальше')
 else:
     print('пока посидим тут')'''
@@ -25,7 +24,7 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     should_include=lambda code: test_code in code,
-    should_include_message='что-то случилось с первоначальным кодом'
+    should_include_message='что-то случилось с первоначальным кодом, перезапустите задание'
 )
 res = sber_checker.run()
 
