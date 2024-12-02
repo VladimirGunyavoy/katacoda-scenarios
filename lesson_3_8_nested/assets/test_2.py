@@ -60,7 +60,7 @@ my_tests = [
 ]
 
 def should_include(code):
-    return  "     " not in code and 'elif' not in code
+    return  "if: else" not in code and 'elif' not in code
 
 sber_checker = SberChecker(
     filename=filename,
