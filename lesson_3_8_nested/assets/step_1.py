@@ -11,3 +11,16 @@ print('1 — да, 0 — нет')
 free_coffee = int(input())
 
 # Ваш код
+
+
+if not big_salary:
+    print('Отклонить оффер')
+else:
+    if long_road:
+        print('Отклонить оффер')
+    else:
+        if not free_coffee: 
+            print('Отклонить оффер')
+        else:
+            print('Принять оффер')
+    
