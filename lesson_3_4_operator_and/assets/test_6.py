@@ -15,19 +15,24 @@ my_tests = [
     },
 ]
 
-test_code = '''
-if not (a and b):
-    print('пора идти дальше')
+def should_include(code):
+    test_code = '''if not (a and b):
+print('пора идти дальше')
 else:
-    print('пока посидим тут')'''
+print('пока посидим тут')'''
+    
+    for line in test_code.split('\n'):
+        if line not in code:
+            return False
+    return True
+    
 
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    should_include=lambda code: test_code in code,
-    should_include_message='что-то случилось с первоначальным кодом'
+    should_include=should_include,
+    should_include_message='что-то случилось с первоначальным кодом, перезапустите задание'
 )
-
 res = sber_checker.run()
 
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
