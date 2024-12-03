@@ -166,8 +166,8 @@ class SberChecker:
                     should_include_result = ""
 
                 results[f'Test {index}'] = {
-                    'input': _crutch_for_output(self._convert_to_string(inputs)) if inputs else [],
-                    'expected': _crutch_for_output(self._convert_to_string(output)) if output else [],
+                    'input': _crutch_for_output(self._convert_to_string(inputs)) if inputs is not None else [],
+                    'expected': _crutch_for_output(self._convert_to_string(output)) if output is not None else [],
                     'result': _crutch_for_output(self._convert_to_string(result)) if result is not None else [],
                     'passed': passed,
                     'error': error,
