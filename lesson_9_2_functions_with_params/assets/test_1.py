@@ -20,7 +20,7 @@ my_tests = [
 sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
-    postcode="generate_rejection('Михаил', 'Электрик')"
+    postcode="print(generate_rejection('Михаил', 'Электрик'))"
 )
 res = sber_checker.run()
 
