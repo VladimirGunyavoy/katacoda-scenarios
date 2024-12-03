@@ -35,7 +35,6 @@ sber_checker = SberChecker(
     filename=filename,
     tests=my_tests,
     call="get_by_id",
-    should_include=
 )
 res = sber_checker.run()
 
