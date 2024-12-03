@@ -127,16 +127,7 @@ class SberChecker:
         return self.should_include(clean_code)
 
     def _convert_to_string(self, obj):
-        if isinstance(obj, (int, float)):
-            return str(obj)
-        elif isinstance(obj, (str, bool)):
-            return obj
-        elif isinstance(obj, list):
-            return [self._convert_to_string(item) for item in obj]
-        elif isinstance(obj, dict):
-            return str({self._convert_to_string(k): self._convert_to_string(v) for k, v in obj.items()})
-        else:
-            return str(obj)
+        return obj if isinstance(obj, (str, bool)) else str(obj)
 
     def run(self):
         """ Main function for checking code """
