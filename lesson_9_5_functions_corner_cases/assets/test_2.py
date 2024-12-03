@@ -43,9 +43,9 @@ json_res = json.dumps(res, indent=4, ensure_ascii=False)
 dct = json.loads(json_res)
 
 for test in dct:
-    print(test)
-    print(dct[test])
-    print()
+    # print(test)
+    # print(dct[test])
+    # print()
     for res in dct[test]:
         if res == 'input':
             
@@ -59,7 +59,7 @@ for test in dct:
             # print(dct[test][res])
             
             dct[test][res][0] = str(dct[test][res][0])
-            print(dct[test][res])
+            # print(dct[test][res])
             # print(dct[test][res])
         
             # print(dct[test][res])
@@ -69,7 +69,7 @@ for test in dct:
         #     print(el)
 # print(json_res)
 
-print(dct)
+# print(dct)
 
 json_res = json.dumps(dct, indent=4, ensure_ascii=False)
 
