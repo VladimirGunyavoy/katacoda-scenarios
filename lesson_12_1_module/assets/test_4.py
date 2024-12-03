@@ -52,7 +52,7 @@ with open('report.txt', 'w') as file:
 """
 
 def should_include(code):
-    lst = ['my_module', 'make_report', 'data_1.csv']
+    lst = ['my_module', 'make_report', 'data.csv']
     prod = 1
     for name in lst:
         prod *= int(name in code)
@@ -64,7 +64,7 @@ sber_checker = SberChecker(
     precode=precode,
     tests=my_tests,
     should_include=should_include,
-    should_include_message='Не обнаружено необходимых импортов',
+    should_include_message='Не обнаружено необходимых импортов: модуля, функции формирования отчета либо файла',
     postcode=postcode,
 )
 res = sber_checker.run()
