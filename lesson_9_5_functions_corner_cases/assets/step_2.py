@@ -8,6 +8,5 @@ elements = [
 def get_by_id(elements, id):
     for element in elements:
         if element.get('id') == id:
-            # print(element)
             return element
         return None
