@@ -134,7 +134,7 @@ class SberChecker:
         elif isinstance(obj, list):
             return [self._convert_to_string(item) for item in obj]
         elif isinstance(obj, dict):
-            return str({self._convert_to_string(k): self._convert_to_string(v) for k, v in obj.items()})
+            return {self._convert_to_string(k): self._convert_to_string(v) for k, v in obj.items()}
         else:
             return str(obj)
 

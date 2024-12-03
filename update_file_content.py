@@ -11,12 +11,9 @@ def replace_content(root_dir):
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r') as f:
                     content = f.read()
-                if 'порешали' in content:
+                if 'просвящаться' in content:
                     print(f"Файл: {file_path}")
-                    content = content.replace(
-                        'Вот, и порешали. Пора просвещаться!',
-                        'Практическая часть завершена. Вы можете приступить к изучению нового материала.'
-                    )
+                    content = content.replace('просвящаться', 'просвещаться')
                     with open(file_path, 'w') as f:
                         f.write(content)
                     print(f"Обновлен файл: {file_path}")
