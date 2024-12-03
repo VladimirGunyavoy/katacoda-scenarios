@@ -17,7 +17,9 @@ my_tests = [
 
 
 def should_include(code):
-    return "employee['grade']" in code and "employee['hours']" in code
+    cond_1 = "employee['grade']" in code and "employee['hours']" in code
+    cond_2 = 'employee["grade"]' in code and 'employee["hours"]' in code
+    return cond_1 or cond_2
 
 
 sber_checker = SberChecker(
