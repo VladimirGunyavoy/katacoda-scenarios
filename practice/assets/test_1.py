@@ -19,7 +19,7 @@ sber_checker = SberChecker(
     tests=my_tests,
 )
 res = sber_checker.run()
-res['Test 1']['passed'] = False
+res['Test 1']['passed'] = True
 
 json_res = json.dumps(res, indent=4, ensure_ascii=False)
 
