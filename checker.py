@@ -1,4 +1,5 @@
 import sys
+import ast
 from io import StringIO
 from typing import Callable, Union
 from unittest.mock import patch
@@ -47,18 +48,26 @@ class SberChecker:
     @staticmethod
     def __execute_function(func: Union[str, Callable], args, file_content):
         if isinstance(func, str):
-            exec(file_content, globals())
-            function = globals().get(func)
-            if not function:
-                raise ValueError(f"Function with name '{func}' is not defined")
+            try:
+                tree = ast.parse(file_content)
+                for node in ast.walk(tree):
+                    if isinstance(node, ast.FunctionDef) and node.name == func:
+                        namespace = {}
+                        compiled_function = compile(ast.Module(body=[node], type_ignores=[]), '<string>', 'exec')
+                        exec(compiled_function, namespace)
+                        function = namespace[func]
+                        break
+                else:
+                    raise ValueError(f"Function with name '{func}' is not defined")
+
+            except SyntaxError as e:
+                raise SyntaxError(str(e))
+            except Exception as e:
+                raise e
         else:
             function = func
 
-        if not args:
-            result = function()
-        else:
-            result = function(*args)
-        return result
+        return function() if not args else function(*args)
 
     def __check_with_function(self, test, file_content):
         args, expected_return = self.__check_inputs_outputs(test)
