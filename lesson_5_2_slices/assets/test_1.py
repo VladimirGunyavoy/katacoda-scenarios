@@ -16,11 +16,21 @@ my_tests = [
 ]
 
 
+# def should_include(code):
+#     import re
+
+#     # Регулярное выражение для поиска my_string[число:число] или my_string[текст:текст]
+#     pattern = r'my_string\[(\d+|[a-zA-Z]+):(\d+|[a-zA-Z]+)\]'
+
+#     # Функция для проверки текста
+#     return bool(re.search(pattern, code))
+
 def should_include(code):
     import re
 
-    # Регулярное выражение для поиска my_string[число:число] или my_string[текст:текст]
-    pattern = r'my_string\[(\d+|[a-zA-Z]+):(\d+|[a-zA-Z]+)\]'
+    # Регулярное выражение для поиска my_string[число:число], my_string[текст:текст] 
+    # или my_string[число:число:число], my_string[текст:текст:текст]
+    pattern = r'my_string\[(\d+|[a-zA-Z]+):(\d+|[a-zA-Z]+)(?::(\d+|[a-zA-Z]+))?\]'
 
     # Функция для проверки текста
     return bool(re.search(pattern, code))
